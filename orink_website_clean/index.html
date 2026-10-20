@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Orink Technology — Build. Launch. Grow.</title>
+<meta name="description" content="Orink Technology is a full-service digital agency building high-converting websites, AI tools and strong brands.">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600&family=Goudy+Bookletter+1911&display=swap" rel="stylesheet">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#FFF8F1;--card:#fff;--ink:#1a1410;--mut:#6b5f57;--line:#f0e0d2;--acc:#ff5a1f;--dk:#1a1410}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#110d0a;--card:#1c1511;--ink:#f6efe8;--mut:#b5a89d;--line:#33271f;--dk:#050403}}
+:root[data-theme="dark"]{--bg:#110d0a;--card:#1c1511;--ink:#f6efe8;--mut:#b5a89d;--line:#33271f;--dk:#050403}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Inter Tight',system-ui,sans-serif;line-height:1.6;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:19;background:var(--bg)}
+.w{max-width:1200px;margin:0 auto;padding:0 20px}section{padding:90px 0}
+h1,h2,h3{font-family:'Goudy Bookletter 1911',Georgia,serif;font-weight:400;line-height:1;margin:0 0 14px;letter-spacing:-.02em}
+h1{font-size:clamp(2.8rem,7vw,5.8rem)}h2{font-size:clamp(2rem,5vw,3.6rem)}h3{font-size:1.5rem}
+.mut{color:var(--mut)}.tg{display:inline-flex;align-items:center;gap:6px;font-size:.95rem;margin-bottom:16px}.tg::before{content:"";width:8px;height:8px;background:var(--acc);border-radius:2px}
+.btn{display:inline-block;background:var(--acc);color:#fff;padding:12px 24px;border-radius:99px;font-weight:600;border:0;cursor:pointer;font:inherit;font-weight:600;transition:transform .3s}.btn:hover{transform:translateY(-3px)}
+.cta{display:inline-flex;align-items:center;gap:6px;border:1.5px solid var(--acc);border-radius:99px;padding:5px}.cta i,.cta span{height:48px;background:var(--acc);color:#fff;display:inline-flex;align-items:center;justify-content:center;border-radius:99px;font-style:normal;font-family:'Goudy Bookletter 1911',serif;font-size:1.2rem}.cta i{width:48px;transition:transform .5s}.cta span{padding:0 26px}.cta:hover i{transform:translateX(6px) rotate(360deg)}.cta.l{border-color:#fff}.cta.l i,.cta.l span{background:#fff;color:var(--acc)}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(12px)}
+nav{display:flex;align-items:center;justify-content:space-between;height:70px;gap:14px}
+.logo{font-weight:600;font-size:1.5rem}.logo i{color:var(--acc);font-style:normal}
+.lk{display:flex;gap:30px;font-weight:500}.lk a{position:relative;padding-left:13px}.lk a::before{content:"";position:absolute;left:0;top:50%;width:6px;height:6px;margin-top:-3px;background:var(--ink);border-radius:1px}.lk a:hover{animation:su .4s}
+@keyframes su{40%{transform:translateY(-10px);opacity:0}50%{transform:translateY(10px);opacity:0}}
+.ic{background:none;border:1px solid var(--line);border-radius:50%;width:38px;height:38px;cursor:pointer;color:var(--ink)}
+@media(max-width:860px){.lk{display:none}}
+.hg{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:center}@media(max-width:860px){.hg{grid-template-columns:1fr}}
+.hero{padding:50px 0 0;overflow:hidden}.hero p{max-width:520px;margin:0 0 26px}
+.vc{position:relative;border-radius:32px;overflow:hidden;background:var(--dk);min-height:440px}.vc video,.vd video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.vb{position:absolute;right:14px;top:14px;z-index:2;background:#fff;color:#1a1410;font-size:.8rem;font-weight:600;padding:5px 12px;border-radius:99px}
+.arc{position:relative;height:210px;margin-top:10px}.ai{position:absolute;left:0;top:0;width:52px;height:52px;border-radius:15px;background:var(--card);border:1px solid var(--line);display:grid;place-items:center;font-size:1.5rem;box-shadow:0 6px 16px rgba(255,90,31,.2)}
+.mq{background:var(--acc);color:#fff;overflow:hidden;white-space:nowrap;padding:16px 0;font-family:'Goudy Bookletter 1911',serif;font-size:1.5rem}.mq div{display:inline-block;animation:mq 25s linear infinite}.mq span{margin:0 28px}@keyframes mq{to{transform:translateX(-50%)}}
+.ab{background:var(--acc);padding:50px 0 0}.tr{display:flex;flex-wrap:wrap;gap:12px 34px;justify-content:center;color:#fff;font-weight:600;margin-bottom:44px}
+.dk{background:var(--dk);color:#f6efe8;border-radius:50px 50px 0 0;padding:80px 0;text-align:center}.dk .ps{display:flex;justify-content:space-between;gap:30px;max-width:900px;margin:0 auto 30px;color:#d8cbc0;text-align:left}.dk .ps p{max-width:360px;margin:0}.dk .ps p:last-child{text-align:right}@media(max-width:700px){.dk .ps{flex-direction:column}.dk .ps p:last-child{text-align:left}}
+.dk h2{font-size:clamp(2.2rem,6vw,5rem);max-width:1000px;margin:0 auto 30px}
+.wd{display:inline-flex;overflow:hidden;vertical-align:bottom}.wd>span{display:inline-block;transform:translateY(100%);opacity:0;transition:transform .7s cubic-bezier(.22,1,.36,1),opacity .7s}.on .wd>span,.wd.on>span{transform:none;opacity:1}
+.g{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:28px;transition:transform .3s,background .3s,color .3s}.card:hover{transform:translateY(-6px)}.n{color:var(--acc);font-weight:600}.em{font-size:1.8rem;display:block;margin:8px 0}
+.rv{opacity:0;transform:translateY(30px);transition:opacity .8s,transform .8s}.rv.on{opacity:1;transform:none}
+.chart{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:24px}.chart svg{width:100%;height:auto}.ln{stroke-dasharray:900;stroke-dashoffset:900;transition:stroke-dashoffset 2.4s}.on .ln{stroke-dashoffset:0}.dn{stroke-dasharray:0 251;transition:stroke-dasharray 1.8s}.on .dn{stroke-dasharray:var(--d) 251}
+.term{background:#0b0d13;border-radius:24px;padding:20px;font:13px/1.8 ui-monospace,Menlo,monospace;color:#ffb38a;min-height:210px}.cur{display:inline-block;width:8px;height:14px;background:#ffb38a;vertical-align:middle;animation:bl 1s steps(1) infinite}@keyframes bl{50%{opacity:0}}
+.tabs{display:flex;gap:10px;overflow-x:auto;margin-bottom:20px}.tabs button{border:1px solid var(--line);background:var(--card);color:var(--ink);padding:10px 20px;border-radius:99px;font:inherit;cursor:pointer;white-space:nowrap}.tabs .a{background:var(--acc);color:#fff;border-color:var(--acc)}
+.cs{display:grid;grid-template-columns:1fr 1fr;gap:20px}.cs .card{display:flex;flex-direction:column;justify-content:center;gap:10px}.vd{position:relative;border-radius:24px;overflow:hidden;min-height:300px;background:var(--dk)}@media(max-width:760px){.cs{grid-template-columns:1fr}}
+.wc{background:var(--dk);color:#f6efe8;border-radius:40px;padding:30px;display:grid;grid-template-columns:1fr 1fr;gap:30px}.wc ul{list-style:none;padding:0;margin:20px 0}.wc li{padding:12px 0;border-bottom:1px solid #3a2a20}@media(max-width:760px){.wc{grid-template-columns:1fr}}
+.sk{position:sticky;margin-bottom:20px;display:flex;gap:24px;align-items:center;padding:34px}.sk b{font:4rem 'Goudy Bookletter 1911',serif;color:var(--acc)}
+.st{background:var(--acc);color:#fff;text-align:center}.st .card{background:#0000002a;border-color:#ffffff40}.st strong{font:3.2rem 'Goudy Bookletter 1911',serif}
+.pr{display:flex;gap:20px;flex-direction:column;max-width:900px;margin:0 auto}.pc{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}.pc ul{list-style:none;margin:0;padding:0}.pc li::before{content:"■ ";color:var(--acc);font-size:.6rem}.pc:hover,.pc.en{background:var(--acc);color:#fff}.pc:hover li::before,.pc.en li::before,.pc:hover .mut,.pc.en .mut{color:#fff}
+.price{font:2.6rem 'Goudy Bookletter 1911',serif}.price s{font:1rem 'Inter Tight';opacity:.6}
+.bs{display:flex;flex-wrap:wrap;gap:20px;justify-content:center}.bb{width:160px;height:160px;perspective:800px;cursor:pointer;opacity:0;transform:translateY(-500px)}.on .bb{animation:dr 1.3s cubic-bezier(.3,1.4,.5,1) forwards;animation-delay:var(--i)}@keyframes dr{to{transform:none;opacity:1}}
+.bi{position:relative;width:100%;height:100%;transition:transform .6s;transform-style:preserve-3d}.bb:hover .bi,.bb.f .bi{transform:rotateY(180deg)}.bf,.bk{position:absolute;inset:0;border-radius:50%;backface-visibility:hidden;display:grid;place-items:center;text-align:center;padding:18px;font-size:.78rem}.bf{background:var(--card);border:1px solid var(--line);font-size:1rem;font-weight:600}.bf i{display:block;font-size:2rem;font-style:normal}.bk{background:var(--acc);color:#fff;transform:rotateY(180deg)}
+.fq{display:grid;grid-template-columns:1fr 1fr;gap:20px}.fq>div{border-radius:24px;padding:30px;min-height:340px}.fl{background:var(--acc);color:#fff}.fl p{font:1.5rem/1.3 'Goudy Bookletter 1911',serif;margin:14px 0;cursor:pointer;opacity:.55}.fl p.a{opacity:1}.fa{background:var(--card);border:1px solid var(--line)}@media(max-width:760px){.fq{grid-template-columns:1fr}}
+.ct{display:grid;grid-template-columns:1fr 1.2fr;gap:40px}@media(max-width:860px){.ct{grid-template-columns:1fr}}
+input,select,textarea{width:100%;padding:13px 16px;margin-bottom:12px;border-radius:14px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit}.hp{position:absolute;left:-9999px}
+footer{background:var(--dk);color:#f6efe8;position:relative;overflow:hidden;padding:90px 0 24px;text-align:center}.el{position:absolute;width:160%;aspect-ratio:1;left:-30%;top:46%;border-radius:50%;background:var(--acc)}footer .w{position:relative}
+footer h2{font-size:clamp(3rem,11vw,9rem);line-height:.9;max-width:900px;margin:0 auto 30px}
+.eyes{display:flex;justify-content:center;gap:30px;margin:50px 0 40px}.ey{width:clamp(80px,16vw,170px);height:clamp(130px,26vw,280px);background:#fff;border-radius:50%;position:relative;overflow:hidden}.pu{position:absolute;width:38%;aspect-ratio:1;background:#1a1410;border-radius:50%;left:31%;top:40%}
+.fc{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:24px;text-align:left;margin-top:30px}.fc a,.fc span{display:block;margin:6px 0}.fc h4{margin:0 0 8px;text-transform:uppercase}
+.wa{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));z-index:30;background:#25d366;color:#fff;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-size:1.6rem}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.bb,.rv,.wd>span{opacity:1!important;transform:none!important}}
+img,video,svg{max-width:100%}
+section{padding:clamp(56px,9vw,100px) 0}
+.g{grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr))}.g>.card{display:flex;flex-direction:column}
+.card{position:relative;overflow:hidden}.card::after{content:"";position:absolute;inset:0;background:radial-gradient(280px circle at var(--mx,50%) var(--my,0),rgba(255,90,31,.16),transparent 65%);opacity:0;transition:opacity .3s;pointer-events:none}.card:hover::after{opacity:1}.card:hover{box-shadow:0 20px 44px rgba(255,90,31,.14)}
+#pg{position:fixed;top:env(safe-area-inset-top,0px);left:0;height:3px;width:0;background:linear-gradient(90deg,#ff5a1f,#ffb347);z-index:40}
+.cg{position:fixed;left:-300px;top:-300px;width:340px;height:340px;border-radius:50%;pointer-events:none;background:radial-gradient(circle,rgba(255,90,31,.18),transparent 70%);transform:translate(-50%,-50%);z-index:1}@media(hover:none){.cg{display:none}}
+.hero{position:relative}.hero::before{content:"";position:absolute;width:560px;height:560px;right:-140px;top:-120px;background:radial-gradient(circle,rgba(255,90,31,.32),transparent 70%);filter:blur(30px);animation:fl 9s ease-in-out infinite alternate;pointer-events:none}@keyframes fl{to{transform:translate(-70px,60px) scale(1.15)}}.hero .hg{position:relative}
+.vc{aspect-ratio:4/5;min-height:0;box-shadow:0 30px 70px rgba(255,90,31,.28)}.vc::after{content:"";position:absolute;inset:0;background:linear-gradient(transparent 55%,rgba(0,0,0,.65));pointer-events:none}
+.vcap{position:absolute;left:18px;bottom:16px;z-index:2;color:#fff;font:1.7rem 'Goudy Bookletter 1911',serif}
+.arc{height:clamp(120px,22vw,210px)}header{border-bottom:1px solid var(--line)}header nav{position:relative}#mb{display:none}.hero h1{font-size:clamp(2.4rem,8vw,5.6rem)}
+@media(max-width:860px){#mb{display:block}.lk.open{display:flex;position:absolute;top:70px;left:-20px;right:-20px;flex-direction:column;gap:18px;padding:22px 24px;background:var(--bg);border-bottom:1px solid var(--line)}.hero{padding-top:30px}.vc{max-width:460px;margin:0 auto;width:100%}}
+@media(max-width:600px){.nb{padding:10px 14px;font-size:.85rem}.sk{flex-direction:column;align-items:flex-start;gap:4px;padding:22px}.sk b{font-size:3rem}.wc{padding:18px;border-radius:28px}.fq>div{padding:22px;min-height:0}.cs .card{padding:22px}.vd{min-height:220px}.ai{width:42px;height:42px;font-size:1.2rem}.pc{flex-direction:column}.card{padding:22px}.tabs button{padding:8px 16px}.dk{border-radius:32px 32px 0 0;padding:56px 0}.price{font-size:2.2rem}.mq{font-size:1.2rem}}
+@media(max-width:360px){.w{padding:0 14px}.logo{font-size:1.25rem}}
+[hidden]{display:none!important}
+main[data-page]{animation:pf .5s}@keyframes pf{from{opacity:0;transform:translateY(14px)}}
+.lk a.act{color:var(--acc)}
+.ph{padding:70px 0 40px;position:relative;overflow:hidden}.ph::before{content:"";position:absolute;width:480px;height:480px;right:-120px;top:-160px;background:radial-gradient(circle,rgba(255,90,31,.3),transparent 70%);filter:blur(30px);pointer-events:none}.ph .w{position:relative}.ph p{max-width:700px}.bc{margin-top:18px;color:var(--mut);font-size:.9rem}.bc a{color:var(--acc)}
+.sv{display:flex;gap:24px;align-items:flex-start;margin-bottom:18px;padding:30px}.g>.sv{flex-direction:row}.sv>b{font:3.4rem/1 'Goudy Bookletter 1911',serif;color:var(--acc)}.sv>div{flex:1}.sv .em{font-size:2.4rem;margin:0}
+.chp{display:inline-block;border:1px solid var(--line);border-radius:99px;padding:4px 14px;font-size:.82rem;margin:4px 6px 0 0}
+.card.pj{padding:0}.bw{display:flex;align-items:center;gap:6px;padding:12px 16px;border-bottom:1px solid var(--line);font-size:.8rem;color:var(--mut)}.bw i{width:10px;height:10px;border-radius:50%;background:var(--line);flex:none}.bw span{margin-left:8px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.scr{position:relative;aspect-ratio:16/10;overflow:hidden;background:linear-gradient(135deg,#1a1410,#4a1a08 60%,#ff5a1f)}.ph2{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;color:#fff;text-align:center;padding:16px}.ph2 h3{margin:0}.ph2 .chp{border-color:#ffffff66}
+.scr iframe{position:absolute;left:0;top:0;width:1280px;height:800px;border:0;transform-origin:0 0;background:#fff}
+.pjf{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;padding:18px 20px}
+.av{width:84px;height:84px;border-radius:50%;background:var(--acc);color:#fff;display:grid;place-items:center;font:2rem 'Goudy Bookletter 1911',serif;flex:none}.card.fd{flex-direction:row;align-items:center;gap:20px}
+.fx{display:flex;justify-content:space-between;gap:16px;padding:14px 0;border-bottom:1px solid var(--line);flex-wrap:wrap}
+.ctb{position:relative;overflow:hidden;background:var(--dk);color:#f6efe8;border-radius:28px;padding:clamp(48px,8vw,80px) 24px;text-align:center}.ctb video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.45}.ctb .w{position:relative}
+@media(max-width:600px){.g>.sv{flex-direction:column;gap:6px;padding:22px}.sv>b{font-size:2.6rem}.card.fd{flex-direction:column;text-align:center}}
+.fb{position:relative;background:rgba(26,20,16,.94);backdrop-filter:blur(8px);border:1px solid #ffffff1f;border-radius:28px;padding:clamp(24px,4vw,44px);margin-top:20px;text-align:left}
+.fg{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.2fr;gap:30px}.fg h4{margin:0 0 12px;text-transform:uppercase;font-size:.85rem;letter-spacing:.08em;color:#ffb38a}
+.fg a,.fg span{display:block;margin:7px 0;color:#e8d6ca}.fg a:hover{color:#fff}.fg .btn{display:inline-block;color:#fff}.fm{color:#cdbdb0;max-width:340px}
+.so{display:flex;gap:10px;margin-top:14px}.so a{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;border:1px solid #ffffff33;margin:0;font-weight:600;font-size:.85rem;color:#fff;transition:.3s}.so a:hover{background:var(--acc);border-color:var(--acc);transform:translateY(-3px)}
+.fbt{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center;margin-top:30px;padding-top:20px;border-top:1px solid #ffffff1f;font-size:.88rem;color:#cdbdb0}.lg{display:flex;gap:18px;flex-wrap:wrap}.lg a{color:#cdbdb0}.lg a:hover{color:#fff}
+.bt{background:none;border:1px solid #ffffff33;color:#fff;border-radius:99px;padding:8px 16px;cursor:pointer;font:inherit;font-size:.85rem}.bt:hover{background:var(--acc);border-color:var(--acc)}
+@media(max-width:900px){.fg{grid-template-columns:1fr 1fr}}@media(max-width:560px){.fg{grid-template-columns:1fr}.fbt{flex-direction:column;align-items:flex-start}}
+
+/* Production polish overrides: spacing, responsive grids, navigation and accessible interactions */
+:root{--bg:#100d0b;--card:#191410;--ink:#f7f0e9;--mut:#c0b1a5;--line:#352820;--acc:#ff5a1f;--dk:#090706;--surface-soft:#211812}
+:root[data-theme="light"]{--bg:#fff9f4;--card:#fff;--ink:#211710;--mut:#716257;--line:#eadbd0;--dk:#211710;--surface-soft:#f8eee5}
+html{scroll-padding-top:90px;scroll-behavior:smooth;scrollbar-gutter:stable}
+body{line-height:1.65;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+.w{width:min(100% - 48px,1320px);padding:0;margin-inline:auto}
+section{padding-block:clamp(56px,7vw,92px)}
+header{z-index:100;border-bottom:1px solid var(--line)}
+nav{min-height:76px;height:auto;padding-block:10px;gap:20px}
+.logo{letter-spacing:-.04em;white-space:nowrap}
+.lk{align-items:center;gap:clamp(14px,2vw,30px)}
+.lk a{padding:8px 0 8px 13px;white-space:nowrap}
+.lk a:focus-visible,.btn:focus-visible,.cta:focus-visible,button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid #ffb347;outline-offset:3px}
+.btn,.cta,.tabs button,.ic,.bt{transition:transform .2s ease,background .2s ease,border-color .2s ease,box-shadow .2s ease}
+.btn:hover,.cta:hover{box-shadow:0 8px 24px #ff5a1f2b}
+.hero{padding-top:clamp(30px,5vw,64px)}
+.hero h1{max-width:780px;line-height:1.03;letter-spacing:-.045em}
+.hero p{font-size:clamp(1rem,1.3vw,1.12rem)}
+.vc{aspect-ratio:4/4.4;border:1px solid var(--line);box-shadow:0 22px 60px #0003}
+.g{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;align-items:stretch}
+#services .rv + .g{grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
+.card{min-width:0;padding:clamp(20px,2vw,28px);border-radius:22px;overflow-wrap:anywhere}
+.card:hover{transform:translateY(-4px)}
+.card h3{line-height:1.16;letter-spacing:-.025em;overflow-wrap:normal}
+.card p{margin-bottom:0}
+#services .rv + .g .card{height:100%;min-height:310px;display:flex;flex-direction:column;align-items:flex-start}
+#services .rv + .g .card .em{margin:10px 0 8px}
+#services .rv + .g .card h3{min-height:2.3em;font-size:clamp(1.2rem,1.45vw,1.5rem)}
+#services .rv + .g .card p{font-size:.96rem;line-height:1.65}
+#cases .rv:first-child{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:end;gap:14px 28px;margin-bottom:24px}
+#cases .rv:first-child .tg{grid-column:1/-1;margin-bottom:0}
+#cases .rv:first-child h2{margin:0;max-width:900px;line-height:1.05;font-size:clamp(2.25rem,5vw,4.5rem)}
+#cases .rv:first-child .cta{justify-self:end;white-space:nowrap}
+.tabs{gap:10px;margin:0 0 22px;flex-wrap:wrap;overflow:visible}
+.tabs button{padding:10px 20px;border-radius:999px;min-height:46px}
+.tabs button:hover{transform:translateY(-2px);border-color:var(--acc)}
+.cs{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px;align-items:stretch}
+.cs>.vd{min-height:360px;height:100%;border:1px solid var(--line)}
+#cp{padding:clamp(24px,3vw,42px);gap:16px;justify-content:center}
+#cp h3{font-size:clamp(1.8rem,3vw,2.7rem)!important;line-height:1.08}
+#cp p{font-size:1.02rem;max-width:55ch}
+.cta{max-width:100%;gap:7px}
+.cta span{white-space:normal;text-align:center;line-height:1.2}
+.wc{gap:clamp(22px,4vw,48px);padding:clamp(22px,4vw,42px)}
+.sk{position:relative;top:auto!important;margin-bottom:16px;box-shadow:0 8px 24px #0000000b}
+.pr{max-width:1000px;gap:16px}
+.pc{align-items:center}
+.pc>div{flex:1 1 300px;min-width:0}
+.pc ul{flex:0 1 300px;line-height:1.8}
+.fq{align-items:stretch}
+.fq>div{min-width:0}
+.fl p{border-radius:10px;padding:8px 10px;margin:6px 0;cursor:pointer;transition:background .2s,opacity .2s}
+.fl p:hover,.fl p:focus-visible{background:#ffffff1c;opacity:1}
+.fa h3{line-height:1.2}
+.ct{align-items:start;gap:clamp(24px,5vw,64px)}
+#f{padding:clamp(20px,3vw,32px)}
+input,select,textarea{margin-bottom:14px;min-height:48px}
+textarea{resize:vertical;min-height:120px}
+input::placeholder,textarea::placeholder{color:var(--mut);opacity:.85}
+footer{padding-top:clamp(60px,8vw,100px)}
+.fb{padding:clamp(20px,3vw,40px);margin-top:32px}
+.fg{grid-template-columns:1.4fr 1fr 1.15fr 1.25fr;gap:clamp(16px,3vw,36px)}
+.fbt{gap:16px}
+.wa{width:58px;height:58px;box-shadow:0 8px 24px #0003}
+#mb{display:none}
+@media(max-width:1100px){
+ .w{width:min(100% - 40px,1320px)}
+ #services .rv + .g{grid-template-columns:repeat(3,minmax(0,1fr))}
+ #services .rv + .g .card{min-height:270px}
+ .g{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .fg{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .lk{gap:16px}
+}
+@media(max-width:860px){
+ #mb{display:inline-grid;place-items:center}
+ .lk{display:none}
+ .lk.open{display:flex;position:absolute;top:calc(100% + 1px);left:0;right:0;flex-direction:column;align-items:stretch;gap:4px;padding:16px 20px 20px;background:var(--bg);border:1px solid var(--line);border-top:0;border-radius:0 0 18px 18px;box-shadow:0 18px 36px #0004;z-index:110}
+ .lk.open a{padding:11px 12px;border-radius:10px}
+ .lk.open a:hover,.lk.open a.act{background:var(--surface-soft)}
+ .lk.open a::before{top:50%}
+ nav{position:relative}
+ .hg{grid-template-columns:minmax(0,1fr) minmax(260px,.8fr);gap:28px}
+ .cs{grid-template-columns:1fr}
+ .cs>.vd{min-height:clamp(240px,48vw,420px)}
+ #cases .rv:first-child{grid-template-columns:1fr;align-items:start}
+ #cases .rv:first-child .cta{justify-self:start}
+ .wc{grid-template-columns:1fr}
+ .wc .vd{min-height:280px!important}
+ .ct{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+ .w{width:calc(100% - 32px)}
+ nav{min-height:66px;gap:10px}
+ .logo{font-size:1.25rem}
+ .nb{padding:10px 13px;font-size:.82rem;white-space:nowrap}
+ .ic{width:38px;height:38px;flex:none}
+ .hero{padding-top:30px}
+ .hg{grid-template-columns:1fr;gap:28px}
+ .hero h1{font-size:clamp(2.45rem,12vw,4rem);max-width:100%}
+ .vc{max-width:100%;aspect-ratio:16/11}
+ .arc{height:100px;overflow:hidden}
+ section{padding-block:52px}
+ h2{line-height:1.08}
+ #services .rv + .g{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+ #services .rv + .g .card{padding:18px;min-height:0}
+ #services .rv + .g .card h3{min-height:0;font-size:1.2rem}
+ #services .rv + .g .card p{font-size:.91rem}
+ .g{grid-template-columns:1fr;gap:14px}
+ .card{padding:20px;border-radius:18px}
+ #cases .rv:first-child h2{font-size:clamp(2rem,9vw,3.2rem)}
+ .tabs{flex-wrap:nowrap;overflow-x:auto;padding:2px 2px 8px;scrollbar-width:thin}
+ .tabs button{flex:0 0 auto}
+ .cs>.vd{min-height:220px}
+ #cp h3{font-size:1.8rem!important}
+ .cta i{width:42px;height:42px;flex:0 0 42px}
+ .cta span{padding-inline:16px;min-height:42px}
+ .cta{align-items:center}
+ .pc{gap:20px}
+ .pc ul{flex-basis:100%}
+ .fq{grid-template-columns:1fr;gap:14px}
+ .fq>div{padding:22px;min-height:0}
+ .fl p{font-size:1.15rem}
+ .bs{gap:12px}
+ .bb{width:clamp(105px,29vw,145px);height:clamp(105px,29vw,145px)}
+ .fg{grid-template-columns:1fr;gap:24px}
+ .fbt{align-items:flex-start;flex-direction:column}
+ .lg{gap:12px}
+ .wa{right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));width:52px;height:52px}
+ .term{font-size:11px;overflow-wrap:anywhere}
+}
+@media(max-width:380px){
+ .w{width:calc(100% - 26px)}
+ .nb{font-size:.76rem;padding:9px 10px}
+ #services .rv + .g{grid-template-columns:1fr}
+ #services .rv + .g .card{min-height:0}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero::before{animation:none}.card,.btn,.cta,.tabs button{transition:none}}
+
+</style></head><body>
+<header><div class="w"><nav><a class="logo" href="#/">ORINK<i>.</i></a>
+<div class="lk"><a href="#/" data-r="home">Home</a><a href="#/services" data-r="services">Services</a><a href="#/projects" data-r="projects">Projects</a><a href="#/about" data-r="about">About</a><a href="#/contact" data-r="contact">Contact</a></div>
+<div style="display:flex;gap:10px;align-items:center"><button class="ic" id="th" aria-label="Theme">◐</button><button class="ic" id="mb" aria-label="Menu">☰</button><a class="btn nb" href="#/contact">Start a Project</a></div></nav></div></header>
+
+<main id="top" data-page="home">
+<section class="hero"><div class="w hg"><div>
+<span class="tg">A Full-Service Technology Agency</span>
+<h1 data-w>We Build Digital Products That Grow Your Business</h1>
+<p class="mut">A full-service technology agency helping startups and businesses build high-converting web products and strong brands.</p>
+<a class="cta" href="#contact"><i>»</i><span>Get a Free Strategy</span></a></div>
+<div class="vc"><span class="vb">● Live Preview</span><span class="vcap">Build. Launch. Grow.</span><video data-f="a" autoplay muted loop playsinline></video></div></div>
+<div class="arc" id="arc"></div></section>
+
+<div class="mq"><div><span>Built for Growth ✦</span><span>Designed to Convert ✦</span><span>Strategy First ✦</span><span>Orink Technology ✦</span><span>Built for Growth ✦</span><span>Designed to Convert ✦</span><span>Strategy First ✦</span><span>Orink Technology ✦</span></div></div>
+
+<section class="ab" id="about" style="padding-bottom:0"><div class="w"><div class="tr"><span>React</span><span>Next.js</span><span>Node.js</span><span>Tailwind</span><span>AI Chatbots</span><span>Automation</span><span>SEO</span></div></div>
+<div class="dk"><div class="w"><div class="ps"><p>Orink Technology is a remote-first digital studio headquartered in Bhubaneswar, India.</p><p>We partner with founders, startups and businesses across the US, Canada, UK and beyond.</p></div>
+<span class="tg">About us</span>
+<h2 data-w>We’re a results-driven technology agency helping brands build products that grow.</h2>
+<p class="mut" style="margin-bottom:24px">Smrutiranjan Pradhan — CEO, Orink Technology</p>
+<a class="cta l" href="#contact"><i>»</i><span>Let’s Work Together</span></a></div></div></section>
+
+<section id="services"><div class="w"><div class="rv"><span class="tg">Our Services</span><h2>What We Are Offering to Our Clients</h2><p class="mut">From strategy to launch — we handle every layer of your digital product so you can focus on growing your business.</p></div>
+<div class="g rv">
+<div class="card"><span class="n">01.</span><span class="em">💻</span><h3>Web Development</h3><p class="mut">High-performance, scalable web applications built with React, Next.js, and modern full-stack tech stacks.</p></div>
+<div class="card"><span class="n">02.</span><span class="em">📱</span><h3>App Development</h3><p class="mut">Cross-platform mobile apps that deliver seamless user experiences on iOS and Android.</p></div>
+<div class="card"><span class="n">03.</span><span class="em">✨</span><h3>UI/UX Design</h3><p class="mut">Beautiful, intuitive interfaces designed to convert visitors into loyal customers.</p></div>
+<div class="card"><span class="n">04.</span><span class="em">🤖</span><h3>AI &amp; Automation</h3><p class="mut">Custom AI tools, chatbots, and process automation solutions that supercharge your business.</p></div>
+<div class="card"><span class="n">05.</span><span class="em">📣</span><h3>Social Media Management &amp; Marketing</h3><p class="mut">Strategic content creation and campaign management to boost your brand presence and engagement.</p></div></div>
+<p class="rv" style="text-align:center;margin-top:26px"><a class="cta" href="#/services"><i>»</i><span>View All Services</span></a></p>
+<div class="g rv" style="margin-top:20px;grid-template-columns:repeat(auto-fit,minmax(290px,1fr))">
+<div class="chart"><h3>Traffic Growth</h3><svg viewBox="0 0 400 200"><path class="ln" d="M0 170L60 150L120 155L180 110L240 120L300 60L360 40L400 25" fill="none" stroke="#ff5a1f" stroke-width="3" stroke-linecap="round"/></svg></div>
+<div class="chart" style="text-align:center"><h3>What We Build</h3><svg viewBox="0 0 120 120" style="max-width:180px"><circle cx="60" cy="60" r="40" fill="none" stroke="var(--line)" stroke-width="16"/><g transform="rotate(-90 60 60)" fill="none" stroke-width="16"><circle class="dn" style="--d:113" cx="60" cy="60" r="40" stroke="#ff5a1f"/><circle class="dn" style="--d:63" stroke-dashoffset="-113" cx="60" cy="60" r="40" stroke="#ffb347"/><circle class="dn" style="--d:75" stroke-dashoffset="-176" cx="60" cy="60" r="40" stroke="#6b5f57"/></g></svg></div>
+<div class="term" id="term"></div></div></div></section>
+
+<section id="cases" style="padding-top:0"><div class="w"><div class="rv"><span class="tg">Featured Projects</span><h2>Case Studies That Reflect Our Expertise</h2><a class="cta" href="#/projects"><i>»</i><span>See All Case Studies</span></a></div>
+<div class="tabs" id="tabs"></div><div class="cs"><div class="vd"><span class="vb" id="cb"></span><video data-f="c" autoplay muted loop playsinline></video></div><div class="card" id="cp"></div></div></div></section>
+
+<section style="padding-top:0"><div class="w"><div class="wc rv"><div class="vd" style="min-height:340px"><video data-f="b" autoplay muted loop playsinline></video></div>
+<div><span class="tg">Why Choose Us</span><h2>Why Leading Brands Trust Us to Build Their Digital Success</h2><p style="color:#d8cbc0">Our team treats your business like our own, with the same urgency, care, and accountability.</p>
+<ul><li>Strategy-Driven Design, Not Just Visuals</li><li>Clear Communication &amp; Full Transparency</li><li>Long-Term Support &amp; Optimization</li></ul></div></div></div></section>
+
+<section style="padding-top:0"><div class="w"><div class="rv"><span class="tg">How It Works</span><h2>Our Proven Process for Building High-Impact Digital Products</h2></div>
+<div class="card sk" style="top:90px"><b>01</b><div><h3>Tailored Solutions</h3><p class="mut">We start by deeply understanding your goals, audience, and market. No templates — every project is built custom for your needs.</p></div></div>
+<div class="card sk" style="top:110px"><b>02</b><div><h3>Strategic Planning</h3><p class="mut">We map out every feature, milestone, and deliverable before a single line of code is written — so you’re never surprised.</p></div></div>
+<div class="card sk" style="top:130px"><b>03</b><div><h3>Seamless Execution</h3><p class="mut">Our engineers and designers work in sync, shipping quality code with pixel-perfect UI — on time, every time.</p></div></div></div></section>
+
+<section class="st"><div class="w"><div class="rv"><span class="tg" style="color:#fff">Numbers Don’t Lie</span><h2>They Reveal the True Power of a Company</h2></div>
+<!-- EDIT the data-t values with real numbers -->
+<div class="g rv"><div class="card"><strong data-t="25" data-s="+">0</strong><p>Completed Projects</p></div><div class="card"><strong data-t="100" data-s="%">0</strong><p>Client Satisfaction</p></div><div class="card"><strong data-t="20" data-s="+">0</strong><p>Happy Clients</p></div></div></div></section>
+
+<section id="pricing"><div class="w"><div class="rv" style="text-align:center"><span class="tg">Pricing Plans</span><h2>Transparent Pricing for Every Stage</h2><p class="mut">No hidden fees. No surprises. Just clear value for every dollar you invest.</p></div>
+<div class="pr rv">
+<div class="card pc"><div><h3>Starter</h3><p class="mut">Perfect for early-stage startups needing a solid online foundation.</p><div class="price">$49 <s>$60</s></div><a class="btn" href="#contact" style="background:var(--ink)">Get Started</a></div><ul><li>5-page Next.js website</li><li>Mobile responsive design</li><li>1 revision round</li><li>Basic SEO setup</li><li>1 month support</li></ul></div>
+<div class="card pc"><div><h3>Growth <small class="n">· Most Popular</small></h3><p class="mut">Best for growing businesses ready to scale their digital presence.</p><div class="price">$129 <s>$150</s></div><a class="btn" href="#contact" style="background:var(--ink)">Get Started</a></div><ul><li>Custom web application</li><li>UI/UX design included</li><li>3 revision rounds</li><li>Advanced SEO &amp; analytics</li><li>3 months support</li><li>CMS integration</li></ul></div>
+<div class="card pc en"><div><h3>Enterprise</h3><p class="mut">Full-service partnership for ambitious brands with complex needs.</p><div class="price">Custom</div><a class="btn" href="#contact" style="background:#fff;color:var(--acc)">Get Started</a></div><ul><li>Unlimited scope &amp; features</li><li>Dedicated team</li><li>AI integration</li><li>Priority support</li><li>12 months retainer</li><li>Strategy consulting</li></ul></div></div></div></section>
+
+<section style="padding-top:0"><div class="w"><div class="rv" style="text-align:center"><span class="tg">What Drives Us</span><h2>Built Around Real Results</h2><p class="mut">Hover or tap a bubble.</p></div><div class="bs rv" id="bs"></div></div></section>
+
+<section style="padding-top:0"><div class="w"><div class="rv" style="text-align:center"><span class="tg">FAQ</span><h2>Everything You Need to Know</h2></div><div class="fq rv"><div class="fl" id="fl"></div><div class="fa" id="fa"></div></div></div></section>
+
+<section id="contact" style="padding-top:0"><div class="w ct rv"><div><span class="tg">Get in Touch</span><h2>Let’s Build Something Amazing Together</h2>
+<p class="mut">Whether you have a project in mind or just want to explore possibilities — drop us a message and we’ll get back to you within 24 hours.</p>
+<p><b>Phone</b><br><a href="tel:+918280162443">+91-8280162443</a></p><p><b>Email</b><br><a href="mailto:orinktechnology@gmail.com">orinktechnology@gmail.com</a></p><p><b>Office</b><br>Bhubaneswar, Odisha, India</p></div>
+<form class="card" id="f"><input class="hp" tabindex="-1" autocomplete="off" name="website" aria-hidden="true"><input id="fn" placeholder="Your Name" required><input id="fe" type="email" placeholder="Email Address" required><input id="fp" placeholder="Phone Number"><select id="fs"><option value="">Select a service</option><option>Web Development</option><option>App Development</option><option>UI/UX Design</option><option>AI &amp; Automation</option><option>Digital Branding</option></select><textarea id="fm" rows="4" placeholder="Your Message"></textarea><button class="btn" type="submit">Send Message</button></form></div></section>
+
+<section style="padding-top:0"><div class="w"><div class="rv"><span class="tg">Our Blog</span><h2>Latest News &amp; Articles</h2></div><div class="g rv">
+<div class="card"><span class="n">20 Apr · 3 min</span><h3>Designing User Experiences That Actually Convert</h3></div>
+<div class="card"><span class="n">03 May · 3 min</span><h3>Why Your Brand Needs a Strong Online Presence</h3></div>
+<div class="card"><span class="n">05 Jun · 3 min</span><h3>Brand Identity Essentials for Digital Businesses</h3></div></div></div></section>
+</main>
+<main data-page="services" hidden><section class="ph"><div class="w"><span class="tg">What We Do</span><h1 data-w>Our Premium Services</h1><p class="mut">From conception to deployment, we build high-converting software solutions, scalable AI architectures, and bespoke brand experiences designed to win.</p><div class="bc"><a href="#/">Home</a> / Services</div></div></section><section style="padding-top:0"><div class="w"><div class="rv"><span class="tg">Our Services</span><h2>What We Are Offering to Our Clients</h2><p class="mut">From strategy to launch — we handle every layer of your digital product so you can focus on growing your business.</p></div><div id="svl" class="rv"></div></div></section><section style="padding-top:0"><div class="w"><div class="rv"><span class="tg">How It Works</span><h2>Our Proven Process for Building High-Impact Digital Products</h2></div><div class="g rv" id="prc"></div></div></section><section style="padding-top:0"><div class="w"><div class="ctb rv"><video data-f="b" autoplay muted loop playsinline></video><div class="w"><span class="tg" style="color:#ffb38a">Start Your Project</span><h2>Let’s Turn Ideas Into Impact</h2><p style="color:#e8d6ca">We partner with founders, startups, and businesses to build digital products that drive real growth. Strategy, design, and engineering — all under one roof.</p><a class="cta l" href="#/contact"><i>»</i><span>Get in Touch</span></a></div></div></div></section></main>
+<main data-page="projects" hidden><section class="ph"><div class="w"><span class="tg">Portfolio &amp; Work</span><h1 data-w>Our Products &amp; Projects</h1><p class="mut">A curated showcase of high-impact platforms, client case studies, and live digital products crafted with precision and modern engineering.</p><div class="bc"><a href="#/">Home</a> / Projects</div></div></section><section style="padding-top:0"><div class="w"><div class="rv"><span class="tg">Featured Projects</span><h2>Case Studies That Reflect Our Expertise</h2><p class="mut">Tap “Live preview” to browse each project right here, or open it in a new tab.</p></div><div class="g rv" id="pjl" style="grid-template-columns:repeat(auto-fit,minmax(min(100%,340px),1fr))"></div></div></section><section style="padding-top:0"><div class="w"><div class="ctb rv"><video data-f="b" autoplay muted loop playsinline></video><div class="w"><span class="tg" style="color:#ffb38a">Start Your Project</span><h2>Let’s Turn Ideas Into Impact</h2><p style="color:#e8d6ca">We partner with founders, startups, and businesses to build digital products that drive real growth. Strategy, design, and engineering — all under one roof.</p><a class="cta l" href="#/contact"><i>»</i><span>Get in Touch</span></a></div></div></div></section></main>
+<main data-page="about" hidden><section class="ph"><div class="w"><div class="bc" style="margin:0 0 14px"><a href="#/">Home</a> / About</div><h1 data-w>A remote-first studio building products that hold up.</h1><p class="mut">Orink Technology is a digital studio headquartered in Bhubaneswar, Odisha, India. Founded by Smrutiranjan Pradhan and Rinkey Dutta, we partner with founders, startups and businesses across the US, Canada, the UK and beyond to build high-converting web products, AI tools and strong digital brands.</p><div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:22px"><a class="btn" href="#/contact">Start a project</a><a class="btn" style="background:var(--ink)" href="#/projects">See our work</a><a class="btn" style="background:transparent;color:var(--ink);border:1px solid var(--line)" href="https://www.linkedin.com/company/orinktechnology/posts/?viewAsMember=true" target="_blank" rel="noopener">LinkedIn</a></div></div></section><section style="padding-top:0"><div class="w"><div class="rv"><span class="tg">Founders</span><h2>Who you will actually be working with</h2><p class="mut">Orink Technology is a small team by design. The people below are on the project, not one layer removed from it.</p></div><div class="g rv"><div class="card fd"><div class="av">SP</div><div><h3>Smrutiranjan Pradhan</h3><b class="n">Founder &amp; Chief Executive Officer</b><p class="mut">Leads Orink Technology’s client work across web development, AI tooling and automation, and sets the editorial direction for Orink Insights.</p></div></div><div class="card fd"><div class="av">RD</div><div><h3>Rinkey Dutta</h3><b class="n">Co-Founder</b><p class="mut">Co-founded Orink Technology and works across product design, brand and the engineering behind the studio’s delivery.</p></div></div></div></div></section><section style="padding-top:0"><div class="w"><div class="rv"><span class="tg">How we work</span><h2>Four principles we do not negotiate on</h2></div><div class="g rv" id="pn"></div></div></section><section style="padding-top:0"><div class="w"><div class="rv"><span class="tg">What we do</span><h2>Capabilities</h2></div><div class="g rv" id="cap"></div></div></section><section style="padding-top:0"><div class="w"><div class="rv"><span class="tg">Selected work</span><h2>A few things we have built</h2></div><div class="g rv" id="sw"></div></div></section><section style="padding-top:0"><div class="w"><div class="rv"><span class="tg">Orink Insights</span><h2>We write down what we learn while building.</h2><p class="mut">Orink Insights is our editorial publication — practical guides on AI tools, prompts, everyday software, web development and online tools. Every article states its criteria, includes the failure cases, and carries nothing we have not verified.</p><a class="cta" href="https://www.orinktechnology.tech/blog" target="_blank" rel="noopener"><i>»</i><span>Read Orink Insights</span></a></div><div class="g rv" id="ins" style="margin-top:24px"></div></div></section><section style="padding-top:0"><div class="w"><div class="rv"><span class="tg">Company details</span><h2>The facts</h2></div><div class="rv" id="fx"></div><p class="mut rv" style="margin-top:18px">Business registration: the registered legal entity name, company registration number and registered address have not yet been published. Email us and we will provide them.</p></div></section><section style="padding-top:0"><div class="w"><div class="ctb rv"><video data-f="b" autoplay muted loop playsinline></video><div class="w"><span class="tg" style="color:#ffb38a">Start Your Project</span><h2>Let’s Turn Ideas Into Impact</h2><p style="color:#e8d6ca">We partner with founders, startups, and businesses to build digital products that drive real growth. Strategy, design, and engineering — all under one roof.</p><a class="cta l" href="#/contact"><i>»</i><span>Get in Touch</span></a></div></div></div></section></main>
+
+<footer><div class="el"></div><div class="w"><h2 data-w>Don’t Hesitate to Reach Out</h2><a class="cta l" href="#/contact"><i>»</i><span>Get Started</span></a>
+<div class="eyes"><div class="ey"><div class="pu"></div></div><div class="ey"><div class="pu"></div></div></div>
+<div class="fb"><div class="fg">
+<div><div class="logo" style="color:#fff">ORINK<i>.</i></div><p class="fm">Orink Technology is a remote-first digital studio — we build high-converting web products, AI tools, and brand identities for startups and businesses worldwide.</p>
+<div class="so"><a href="https://wa.me/919937947198" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a><a href="https://www.linkedin.com/company/orinktechnology/" target="_blank" rel="noopener" aria-label="LinkedIn">in</a><a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">GH</a><a href="mailto:orinktechnology@gmail.com" aria-label="Email">✉</a></div></div>
+<div><h4>Quick Links</h4><a href="#/">Home</a><a href="#/services">Services</a><a href="#/projects">Projects</a><a href="#/about">About</a><a href="#/contact">Contact</a></div>
+<div><h4>Services</h4><a href="#/services">Web Development</a><a href="#/services">App Development</a><a href="#/services">UI/UX Design</a><a href="#/services">AI &amp; Automation</a><a href="#/services">Social Media Marketing</a></div>
+<div><h4>Contact Info</h4><a href="tel:+918280162443">+91-8280162443</a><a href="mailto:orinktechnology@gmail.com">orinktechnology@gmail.com</a><span>Bhubaneswar, Odisha, India</span><a class="btn" href="#/contact" style="margin-top:12px">Let’s Talk</a></div></div>
+<!-- GST SLOT (hidden from UI): put the number in #gst-no and remove "hidden" when it should go live -->
+<p id="gst-wrap" hidden>GST No: <span id="gst-no"></span></p>
+<div class="fbt"><span>© 2026 Orink Technology. All Rights Reserved.</span><span class="lg"><a href="https://www.orinktechnology.tech/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a><a href="https://www.orinktechnology.tech/terms-and-conditions" target="_blank" rel="noopener">Terms &amp; Conditions</a><a href="https://www.orinktechnology.tech/disclaimer" target="_blank" rel="noopener">Disclaimer</a></span><button class="bt" id="backTop" type="button">↑ Back to top</button></div></div></div></footer>
+<a class="wa" href="https://wa.me/919937947198" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+
+<script>
+(function(){
+var $=function(i){return document.getElementById(i)};
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;e.target.classList.add('on');e.target.querySelectorAll('[data-t]').forEach(function(el){var t=+el.dataset.t,n=0,h=setInterval(function(){n+=Math.max(1,t/50);if(n>=t){n=t;clearInterval(h)}el.textContent=Math.round(n)+(el.dataset.s||'')},30)});io.unobserve(e.target)})},{threshold:.15});
+document.querySelectorAll('[data-w]').forEach(function(h){var f=document.createDocumentFragment();h.textContent.split(/\s+/).filter(Boolean).forEach(function(w,j){var o=document.createElement('span');o.className='wd';var s=document.createElement('span');s.textContent=w;s.style.transitionDelay=j*.06+'s';o.appendChild(s);f.appendChild(o);f.appendChild(document.createTextNode(' '))});h.textContent='';h.appendChild(f);io.observe(h)});
+FBS={'a':'assets/videos/hero.mp4','b':'assets/videos/background.mp4','c':'assets/videos/projects.mp4'};
+document.querySelectorAll('video[data-f]').forEach(function(v){var L=[v.dataset.src,FBS[v.dataset.f]].filter(Boolean),i=0;function nx(){v.src=L[i++];v.play&&v.play().catch(function(){})}v.onerror=function(){if(i<L.length)nx()};nx()});
+var ar=$('arc');ar.innerHTML='<svg viewBox="0 0 1200 200" style="position:absolute;width:0;height:0"><path id="ap" d="M0 170Q600 -40 1200 170"/></svg>';
+var pa=$('ap'),Ln=(function(){try{return pa.getTotalLength()||1300}catch(e){return 1300}})(),T=[],IC=['⚛️','🤖','🎨','📱','⚡','🔍','📊','💻','🚀'];
+IC.concat(IC).forEach(function(s){var d=document.createElement('div');d.className='ai';d.textContent=s;ar.appendChild(d);T.push(d)});
+(function mv(t){if(!ar.offsetWidth){requestAnimationFrame(mv);return}var sx=ar.offsetWidth/1200,sy=ar.offsetHeight/200;T.forEach(function(d,k){var p=((k/T.length)+(t||0)/45000)%1,a=pa.getPointAtLength(p*Ln),b=pa.getPointAtLength(Math.min(Ln,p*Ln+2));d.style.transform='translate('+(a.x*sx-26)+'px,'+(a.y*sy-26)+'px) rotate('+Math.atan2(b.y-a.y,b.x-a.x)*57.3+'deg)'});requestAnimationFrame(mv)})(0);
+var L2=['$ npm create orink-app@latest','✔ Next.js + React scaffolded','✔ AI chatbot connected','✔ SEO & analytics configured','$ deploy --prod','🚀 Live in production'],tm=$('term'),li=0,ci=0;
+(function ty(){if(li>=L2.length){setTimeout(function(){li=0;ci=0;ty()},3000);return}var s=L2[li];ci++;tm.innerHTML=L2.slice(0,li).join('<br>')+(li?'<br>':'')+s.slice(0,ci)+'<span class="cur"></span>';if(ci>=s.length){li++;ci=0;setTimeout(ty,450)}else setTimeout(ty,35)})();
+var CS=[['A-ONE Driving Training School','Web Development & UI','https://a1-driving-bhubaneswar.netlify.app/'],['Pet Palace Pet Care & Supplies','AI & React Development','https://pet-palace-bhubaneswar.netlify.app/'],['ResumeGlobal — AI Resume Builder','AI & Career Technology','https://www.resumeglobal.in/']];
+function sc(i){$('tabs').innerHTML=CS.map(function(c,k){return '<button class="'+(k==i?'a':'')+'" data-i="'+k+'">'+['A-ONE Driving','Pet Palace','ResumeGlobal'][k]+'</button>'}).join('');$('cb').textContent=CS[i][1];$('cp').innerHTML='<span class="n">Project 0'+(i+1)+'</span><h3 style="font-size:2.2rem">'+CS[i][0]+'</h3><p class="mut">'+CS[i][1]+' — delivered by Orink Technology. Open the live project to explore it.</p><a class="cta" href="'+CS[i][2]+'" target="_blank" rel="noopener" style="align-self:flex-start"><i>»</i><span>Visit Project</span></a>'}
+sc(0);$('tabs').onclick=function(e){if(e.target.dataset.i)sc(+e.target.dataset.i)};
+var B=[['🧠','Strategy','Data-driven decisions, not guesswork.'],['🎨','Design','Beautiful, intuitive interfaces that convert.'],['💻','Code','React, Next.js and modern full-stack.'],['🤖','AI','Custom AI tools, chatbots and automation.'],['⚡','Execution','Pixel-perfect UI, on time, every time.'],['🤝','Support','We stay with you after launch.']];
+$('bs').innerHTML=B.map(function(b,i){return '<div class="bb" style="--i:'+i*.15+'s"><div class="bi"><div class="bf"><div><i>'+b[0]+'</i>'+b[1]+'</div></div><div class="bk">'+b[2]+'</div></div></div>'}).join('');
+$('bs').onclick=function(e){var b=e.target.closest('.bb');if(b)b.classList.toggle('f')};
+var Q=[['What does Orink build?','Web apps, mobile apps, UI/UX design, AI & automation tools, and social media marketing.'],['Where are you based?','We’re a remote-first studio in Bhubaneswar, India, working with clients across the US, Canada, UK and beyond.'],['How fast do you reply?','Drop us a message and we’ll get back to you within 24 hours.'],['Do you support projects after launch?','Yes — we monitor, optimize and iterate after launch. Plans include 1 to 12 months of support.'],['How does pricing work?','Starter from $49, Growth from $129, and custom Enterprise partnerships. See the Pricing section.']];
+function fq(i){$('fl').innerHTML='<h3>Questions</h3>'+Q.map(function(q,k){return '<p class="'+(k==i?'a':'')+'" data-i="'+k+'" role="button" tabindex="0" aria-pressed="'+(k==i)+'">'+q[0]+'</p>'}).join('');$('fa').innerHTML='<h3>Answer</h3><h3 style="color:var(--acc);font-size:1.8rem">'+Q[i][0]+'</h3><p class="mut">'+Q[i][1]+'</p>'}
+fq(0);$('fl').onclick=function(e){if(e.target.dataset.i)fq(+e.target.dataset.i)};$('fl').onkeydown=function(e){if((e.key==='Enter'||e.key===' ')&&e.target.dataset.i){e.preventDefault();fq(+e.target.dataset.i)}};
+document.querySelectorAll('.pu').forEach(function(p){addEventListener('pointermove',function(e){var r=p.parentNode.getBoundingClientRect(),dx=e.clientX-(r.left+r.width/2),dy=e.clientY-(r.top+r.height/2),a=Math.atan2(dy,dx),d=Math.min(Math.hypot(dx,dy)*.2,r.width*.28);p.style.transform='translate('+Math.cos(a)*d+'px,'+Math.sin(a)*d*1.6+'px)'})});
+document.querySelectorAll('.rv,.bs').forEach(function(el){io.observe(el)});
+document.body.insertAdjacentHTML('afterbegin','<div id="pg"></div><div class="cg"></div>');
+addEventListener('scroll',function(){var d=document.documentElement;$('pg').style.width=scrollY/Math.max(1,d.scrollHeight-innerHeight)*100+'%'});var backTop=$('backTop');if(backTop)backTop.addEventListener('click',function(){window.scrollTo({top:0,behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});});
+var cg=document.querySelector('.cg');addEventListener('pointermove',function(e){cg.style.left=e.clientX+'px';cg.style.top=e.clientY+'px'});
+document.querySelectorAll('.card').forEach(function(c){c.addEventListener('pointermove',function(e){var r=c.getBoundingClientRect();c.style.setProperty('--mx',e.clientX-r.left+'px');c.style.setProperty('--my',e.clientY-r.top+'px')})});
+var LK=document.querySelector('.lk');$('mb').setAttribute('aria-expanded','false');$('mb').onclick=function(){var opened=LK.classList.toggle('open');$('mb').setAttribute('aria-expanded',String(opened));$('mb').setAttribute('aria-label',opened?'Close menu':'Open menu')};LK.onclick=function(e){if(e.target.closest('a')){LK.classList.remove('open');$('mb').setAttribute('aria-expanded','false');$('mb').setAttribute('aria-label','Open menu')}};document.addEventListener('keydown',function(e){if(e.key==='Escape'){LK.classList.remove('open');$('mb').setAttribute('aria-expanded','false');$('mb').setAttribute('aria-label','Open menu')}});window.addEventListener('resize',function(){if(innerWidth>860){LK.classList.remove('open');$('mb').setAttribute('aria-expanded','false')}});
+var S=[['01','💻','Web Development','High-performance, scalable web applications built with React, Next.js, and modern full-stack tech stacks.',['React','Next.js','Full-stack']],['02','📱','App Development','Cross-platform mobile apps that deliver seamless user experiences on iOS and Android.',['iOS','Android','Cross-platform']],['03','✨','UI/UX Design','Beautiful, intuitive interfaces designed to convert visitors into loyal customers.',['Interfaces','Conversion']],['04','🤖','AI & Automation','Custom AI tools, chatbots, and process automation solutions that supercharge your business.',['AI tools','Chatbots','Automation']],['05','📣','Social Media Management & Marketing','Strategic content creation and campaign management to boost your brand presence and engagement.',['Content','Campaigns','Engagement']]];
+var P=[['A-ONE Driving Training School','Web Development & UI','https://a1-driving-bhubaneswar.netlify.app/','🚗'],['Pet Palace Pet Care & Supplies','AI & React Development','https://pet-palace-bhubaneswar.netlify.app/','🐾'],['ResumeGlobal — AI Resume Builder','AI & Career Technology','https://www.resumeglobal.in/','📄']];
+function ch(a){return a.map(function(x){return '<span class="chp">'+x+'</span>'}).join('')}
+$('svl').innerHTML=S.map(function(x){return '<div class="card sv"><b>'+x[0]+'</b><div><h3>'+x[2]+'</h3><p class="mut">'+x[3]+'</p>'+ch(x[4])+'</div><span class="em">'+x[1]+'</span></div>'}).join('');
+$('prc').innerHTML=[['01','Tailored Solutions','We start by deeply understanding your goals, audience, and market. No templates — every project is built custom for your needs.'],['02','Strategic Planning','We map out every feature, milestone, and deliverable before a single line of code is written — so you’re never surprised.'],['03','Seamless Execution','Our engineers and designers work in sync, shipping quality code with pixel-perfect UI — on time, every time.']].map(function(x){return '<div class="card"><span class="n">'+x[0]+'</span><h3>'+x[1]+'</h3><p class="mut">'+x[2]+'</p></div>'}).join('');
+$('pjl').innerHTML=P.map(function(x){var h=x[2].replace(/^https?:\/\//,'');return '<div class="card pj"><div class="bw"><i></i><i></i><i></i><span>'+h+'</span></div><div class="scr" data-u="'+x[2]+'"><div class="ph2"><span class="em">'+x[3]+'</span><h3>'+x[0]+'</h3><span class="chp">'+x[1]+'</span></div></div><div class="pjf"><button class="btn pjb" type="button">▶ Live preview</button><a class="cta" href="'+x[2]+'" target="_blank" rel="noopener"><i>»</i><span>Visit Project</span></a></div></div>'}).join('');
+document.addEventListener('click',function(e){var b=e.target.closest('.pjb');if(!b)return;var s=b.closest('.pj').querySelector('.scr'),k=s.offsetWidth/1280;s.innerHTML='<iframe src="'+s.dataset.u+'" title="Live preview" loading="lazy" sandbox="allow-scripts allow-same-origin allow-forms allow-popups" style="transform:scale('+k+')"></iframe>';b.remove()});
+$('pn').innerHTML=[['Build what you would use','We would rather ship one thing that works reliably than five that need rescuing. Every engagement starts with the narrowest version of the problem that still creates value.'],['Say what is actually true','In our writing and in our client work, we state limitations plainly. A page that hides its trade-offs costs more trust than it gains in polish.'],['Own the whole path','Strategy, design, engineering and launch sit in one team. Fewer handoffs means fewer places for a requirement to quietly get lost.'],['Optimise for the reader’s time','Fast pages, clear structure and honest content. Performance is a feature, not a phase you add at the end.']].map(function(x,i){return '<div class="card"><span class="n">0'+(i+1)+'</span><h3>'+x[0]+'</h3><p class="mut">'+x[1]+'</p></div>'}).join('');
+$('cap').innerHTML=S.map(function(x){return '<div class="card"><span class="n">'+x[0]+'</span><h3>'+x[2]+'</h3><p class="mut">'+x[3]+'</p></div>'}).join('');
+$('sw').innerHTML=P.map(function(x){return '<a class="card" href="#/projects"><span class="em">'+x[3]+'</span><h3>'+x[0]+'</h3><p class="mut">'+x[1]+'</p></a>'}).join('');
+$('ins').innerHTML=[['AI Tools & Productivity','Where automation genuinely pays off, and where it quietly does not.'],['Prompts & Software Guides','Reusable prompt patterns, plus plain-language troubleshooting for everyday software.'],['Web Development','Next.js, React, CSS and Core Web Vitals, explained the way we had to learn them.']].map(function(x){return '<div class="card"><h3>'+x[0]+'</h3><p class="mut">'+x[1]+'</p></div>'}).join('');
+$('fx').innerHTML=[['Founded by','Smrutiranjan Pradhan and Rinkey Dutta'],['Headquarters','Bhubaneswar, Odisha, India'],['Model','Remote-first'],['Services','5 practice areas'],['Email','orinktechnology@gmail.com'],['Phone','+91 82801 62443']].map(function(x){return '<div class="fx"><b>'+x[0]+'</b><span class="mut">'+x[1]+'</span></div>'}).join('');
+function route(){var h=location.hash,pg='home',an=null;if(h.indexOf('#/')===0){pg=h.slice(2).split(/[/?]/)[0]||'home';if(pg==='contact'){pg='home';an='contact'}}else if(h.length>1)an=h.slice(1);
+if(!document.querySelector('main[data-page="'+pg+'"]'))pg='home';
+document.querySelectorAll('main[data-page]').forEach(function(m){m.hidden=m.dataset.page!==pg});
+document.querySelectorAll('.lk a').forEach(function(a){a.classList.toggle('act',a.dataset.r===pg)});
+document.querySelectorAll('main:not([hidden]) video').forEach(function(v){v.play&&v.play().catch(function(){})});
+var t=an&&$(an);setTimeout(function(){t?t.scrollIntoView({behavior:'smooth'}):scrollTo(0,0)},40)}
+addEventListener('hashchange',route);route();
+$('th').onclick=function(){var d=document.documentElement,c=d.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'),next=c==='dark'?'light':'dark';d.setAttribute('data-theme',next);$('th').setAttribute('aria-label','Switch to '+(next==='dark'?'light':'dark')+' theme');$('th').textContent=next==='dark'?'☼':'◐'};
+$('f').onsubmit=function(e){e.preventDefault();if(this.website.value)return;location.href='mailto:orinktechnology@gmail.com?subject='+encodeURIComponent('New enquiry from '+$('fn').value)+'&body='+encodeURIComponent('Name: '+$('fn').value+'\nEmail: '+$('fe').value+'\nPhone: '+$('fp').value+'\nService: '+$('fs').value+'\n\n'+$('fm').value)};
+})();
+</script></body></html>
