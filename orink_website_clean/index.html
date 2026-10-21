@@ -232,7 +232,316 @@ footer{padding-top:clamp(60px,8vw,100px)}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero::before{animation:none}.card,.btn,.cta,.tabs button{transition:none}}
 
+
+/* Contact form refresh */
+.contact-form{padding:clamp(22px,3vw,36px);border-color:color-mix(in srgb,var(--acc) 30%,var(--line));box-shadow:0 20px 60px #0002;}
+.form-head{margin-bottom:22px}.form-head h3{font-size:clamp(1.6rem,3vw,2.1rem);margin:6px 0 8px}.form-head p{margin:0}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}.field{min-width:0;margin-bottom:8px}.field label{display:block;font-size:.9rem;font-weight:600;margin:0 0 7px}.field label span{color:var(--acc)}.field label small{font-weight:400;color:var(--mut)}.contact-form input:not([type=checkbox]),.contact-form select,.contact-form textarea{display:block;margin:0 0 10px;min-height:48px;border-radius:12px;background:var(--bg);border-color:var(--line);transition:border-color .2s,box-shadow .2s}.contact-form textarea{resize:vertical;min-height:130px}.contact-form input:focus,.contact-form select:focus,.contact-form textarea:focus{border-color:var(--acc);box-shadow:0 0 0 3px #ff5a1f20;outline:none}.contact-form .hp{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}.consent{display:flex;align-items:flex-start;gap:10px;font-size:.85rem;color:var(--mut);margin:4px 0 18px}.consent input{width:17px;height:17px;flex:none;margin:3px 0 0;accent-color:var(--acc)}.form-submit{display:flex;align-items:center;justify-content:space-between;width:100%;padding:15px 20px;border-radius:13px;box-shadow:0 10px 24px #ff5a1f25}.form-submit span:last-child{font-size:1.25rem}.form-note{font-size:.8rem;line-height:1.5;color:var(--mut);text-align:center;margin:14px 0 0}.form-note a{color:var(--acc);font-weight:600;text-decoration:underline;text-underline-offset:3px}.contact-form .btn:hover{transform:translateY(-2px)}
+@media(max-width:600px){.form-grid{grid-template-columns:1fr}.contact-form{padding:20px}.form-head{margin-bottom:16px}}
+/* Added business-focused sections and lead qualification fields */
+#approach .approach-grid{grid-template-columns:repeat(3,minmax(0,1fr));margin-top:24px}
+#approach .card{background:#00000020;border-color:#ffffff40;color:#fff;text-align:left}
+#approach .card strong{display:block;font:clamp(2.4rem,5vw,3.5rem) 'Goudy Bookletter 1911',serif;margin-bottom:12px}
+#approach .card h3{color:#fff}
+#approach .card p{color:#fff;opacity:.85}
+#expectations .card .em{color:var(--acc);font-size:2rem}
+.form-status{font-size:.9rem;color:var(--mut);margin:10px 0 0;min-height:1.4em}
+.form-submit:disabled{opacity:.7;cursor:wait;transform:none}
+@media(max-width:700px){#approach .approach-grid{grid-template-columns:1fr}}
+
+
+/* Interactive Project Fit Finder */
+.fit-section{position:relative;overflow:hidden}
+.fit-shell{display:grid;grid-template-columns:minmax(0,1fr) minmax(280px,.82fr);gap:24px;align-items:stretch}
+.fit-panel,.fit-result{border:1px solid var(--line);border-radius:26px;background:var(--card);padding:clamp(22px,3vw,36px);min-width:0}
+.fit-kicker{display:inline-flex;align-items:center;gap:8px;color:var(--acc);font-weight:600;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase}
+.fit-progress{display:flex;gap:7px;margin:22px 0}
+.fit-progress span{height:4px;flex:1;background:var(--line);border-radius:99px;transition:background .2s}
+.fit-progress span.active{background:var(--acc)}
+.fit-step[hidden]{display:none!important}
+.fit-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:18px 0 22px}
+.fit-option{display:flex;align-items:flex-start;gap:10px;text-align:left;border:1px solid var(--line);border-radius:15px;background:var(--bg);color:var(--ink);padding:14px;cursor:pointer;font:inherit;min-height:78px;transition:border-color .2s,transform .2s,background .2s}
+.fit-option:hover{transform:translateY(-2px);border-color:var(--acc)}
+.fit-option[aria-pressed="true"]{border-color:var(--acc);background:color-mix(in srgb,var(--acc) 10%,var(--card));box-shadow:inset 0 0 0 1px var(--acc)}
+.fit-option .fit-emoji{font-size:1.25rem}
+.fit-actions{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.fit-actions button:disabled{opacity:.45;cursor:not-allowed;transform:none}
+.fit-result{background:var(--dk);color:#f7f0e9;display:flex;flex-direction:column;justify-content:space-between;min-height:100%}
+.fit-result .mut{color:#c0b1a5}
+.fit-result h3{font-size:clamp(1.7rem,3vw,2.3rem);margin:12px 0}
+.fit-result-list{padding:0;list-style:none;margin:20px 0}
+.fit-result-list li{padding:10px 0;border-bottom:1px solid #ffffff20}
+.fit-result-list li:before{content:"✓";color:#ff8a5f;font-weight:700;margin-right:10px}
+.fit-result .btn{align-self:flex-start}
+.fit-note{font-size:.82rem;color:var(--mut);margin-top:14px}
+@media(max-width:760px){.fit-shell{grid-template-columns:1fr}.fit-result{min-height:320px}.fit-options{grid-template-columns:1fr 1fr}}
+@media(max-width:420px){.fit-options{grid-template-columns:1fr}.fit-option{min-height:0}}
+
+
+
+/* ORINK UI refinement — visual polish only, existing content and functionality retained */
+:root{
+  --bg:#100d0b;--card:#191410;--ink:#f7f0e9;--mut:#c0b1a5;
+  --line:#352820;--acc:#ff5a1f;--dk:#090706;--surface-soft:#211812;
+  --ui-shadow:0 18px 55px rgba(0,0,0,.22);
+}
+:root[data-theme="light"]{
+  --bg:#fff9f4;--card:#fff;--ink:#211710;--mut:#716257;
+  --line:#eadbd0;--dk:#211710;--surface-soft:#f8eee5;
+  --ui-shadow:0 18px 45px rgba(77,43,20,.08);
+}
+html{scroll-behavior:smooth;scroll-padding-top:92px}
+body{font-kerning:normal;-webkit-font-smoothing:antialiased}
+::selection{background:var(--acc);color:#fff}
+.w{width:min(100% - 48px,1240px)}
+header{background:color-mix(in srgb,var(--bg) 86%,transparent);border-bottom:1px solid color-mix(in srgb,var(--line) 78%,transparent);box-shadow:0 5px 25px #00000008}
+nav{min-height:76px}
+.logo{font-size:1.55rem;letter-spacing:-.055em}
+.lk a{font-size:.94rem;transition:color .2s ease}
+.lk a::before{transition:transform .2s ease,background .2s ease}
+.lk a:hover,.lk a.act{color:var(--acc)}
+.lk a:hover::before,.lk a.act::before{background:var(--acc);transform:scale(1.25)}
+.hero{padding-top:clamp(38px,6vw,78px)}
+.hero h1{max-width:780px;line-height:1.01;letter-spacing:-.055em;text-wrap:balance}
+.hero p{max-width:54ch;font-size:clamp(1rem,1.3vw,1.15rem);line-height:1.8}
+.tg{font-size:.78rem;letter-spacing:.11em;text-transform:uppercase;font-weight:600}
+.hero .tg{border:1px solid var(--line);background:var(--card);padding:8px 12px;border-radius:999px}
+.hero .tg::before{border-radius:50%;box-shadow:0 0 0 4px #ff5a1f1c}
+.btn{box-shadow:0 8px 22px #ff5a1f20}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 28px #ff5a1f30}
+.cta{background:color-mix(in srgb,var(--acc) 7%,transparent)}
+.vc,.vd{border:1px solid var(--line);box-shadow:var(--ui-shadow)}
+.vb{box-shadow:0 4px 16px #0002;backdrop-filter:blur(8px)}
+.mq{font-size:clamp(1.05rem,2vw,1.45rem);letter-spacing:.015em}
+.ab .tr span{border:1px solid #ffffff40;border-radius:999px;padding:7px 13px;font-size:.9rem}
+.dk{background:radial-gradient(ellipse at 50% 0%,#2b1b12 0%,var(--dk) 60%);border-radius:38px 38px 0 0}
+.dk .ps{line-height:1.75}
+section h2{letter-spacing:-.045em;text-wrap:balance}
+section .rv:first-child{margin-bottom:26px}
+section .rv:first-child>p{max-width:66ch;line-height:1.8}
+.g{gap:18px}
+.card,.chart,.fit-panel,.fit-result{border-radius:22px}
+.card{box-shadow:0 1px 0 #ffffff05;transition:transform .24s ease,border-color .24s ease,box-shadow .24s ease}
+.card:hover{transform:translateY(-4px);border-color:color-mix(in srgb,var(--acc) 48%,var(--line));box-shadow:var(--ui-shadow)}
+.card h3{letter-spacing:-.025em}
+.card p{line-height:1.75}
+#services .rv + .g .card{min-height:285px}
+#services .rv + .g .card .em{width:48px;height:48px;display:grid;place-items:center;border:1px solid var(--line);border-radius:15px;background:color-mix(in srgb,var(--acc) 8%,var(--card));font-size:1.5rem}
+.chart{box-shadow:0 12px 36px #0000000a}
+.term{border:1px solid #ffffff16;box-shadow:inset 0 1px #ffffff08;overflow:hidden}
+.tabs button{transition:all .2s ease}
+.tabs button.a{box-shadow:0 7px 18px #ff5a1f22}
+.cs .card{box-shadow:var(--ui-shadow)}
+.wc{border:1px solid #ffffff12;background:radial-gradient(ellipse at 0% 0%,#29190f,var(--dk) 68%);box-shadow:var(--ui-shadow)}
+.sk{border-radius:20px}
+.sk b{letter-spacing:-.06em}
+#approach .approach-grid{gap:16px}
+#approach .card{border-radius:20px;backdrop-filter:blur(8px);transition:transform .24s ease,background .24s ease}
+#approach .card:hover{background:#0000003d}
+#expectations .card{min-height:220px}
+#expectations .card .em{width:46px;height:46px;display:grid;place-items:center;border-radius:14px;background:color-mix(in srgb,var(--acc) 10%,var(--card))}
+.pr .pc{border-radius:22px;align-items:stretch;transition:transform .24s ease,border-color .24s ease,box-shadow .24s ease}
+.pr .pc:hover{transform:translateY(-3px);box-shadow:var(--ui-shadow)}
+.pr .pc.en{border:1px solid var(--acc);box-shadow:0 12px 34px #ff5a1f18}
+.pr .pc .price{letter-spacing:-.04em;margin:16px 0}
+.pr .pc ul{line-height:1.9}
+.pr .pc li{padding:2px 0}
+.fq>div{border-radius:22px}
+.fl p{font-size:1.12rem;padding:10px 12px}
+.fa{box-shadow:0 12px 35px #00000008}
+input,select,textarea{border-radius:12px;transition:border-color .2s,box-shadow .2s}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--acc);box-shadow:0 0 0 3px #ff5a1f20}
+.contact-form{box-shadow:var(--ui-shadow);border-color:color-mix(in srgb,var(--acc) 24%,var(--line))}
+.contact-form .form-head{padding-bottom:18px;border-bottom:1px solid var(--line)}
+.contact-form .form-submit{letter-spacing:.01em}
+footer{background:radial-gradient(ellipse at 50% 0%,#2b1a11,var(--dk) 60%)}
+footer .el{opacity:.92}
+.fc h4{letter-spacing:.1em;font-size:.78rem;color:#ffb38a}
+.fbt{line-height:1.7}
+.wa{border:2px solid #ffffffc0;transition:transform .2s,box-shadow .2s}
+.wa:hover{transform:translateY(-3px) scale(1.04);box-shadow:0 12px 30px #25d36645}
+.fit-panel,.fit-result{box-shadow:var(--ui-shadow)}
+.fit-option{transition:transform .18s,border-color .18s,background .18s}
+.fit-option:hover{transform:translateY(-2px)}
+.fit-option:focus-visible{outline:3px solid #ffb347;outline-offset:3px}
+.fit-result{background:radial-gradient(ellipse at 100% 0%,#2c1a10,var(--dk) 70%)}
+a,button,input,select,textarea{-webkit-tap-highlight-color:transparent}
+@media(max-width:1000px){
+  .w{width:min(100% - 40px,1240px)}
+  #services .rv + .g{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:860px){
+  nav{min-height:68px}
+  .lk.open{box-shadow:0 18px 36px #0003}
+}
+@media(max-width:600px){
+  .w{width:calc(100% - 32px)}
+  section{padding-block:54px}
+  .hero h1{line-height:1.04}
+  .hero .tg{font-size:.7rem;letter-spacing:.07em}
+  .dk{border-radius:28px 28px 0 0}
+  .ab .tr{gap:8px;margin-bottom:30px}
+  .ab .tr span{font-size:.78rem;padding:6px 10px}
+  #services .rv + .g{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  #services .rv + .g .card{min-height:0}
+  #services .rv + .g .card h3{line-height:1.2}
+  .card,.chart{border-radius:18px}
+  .pr .pc{gap:18px}
+  .fit-panel,.fit-result{border-radius:20px}
+  .contact-form{padding:20px}
+  footer{padding-top:62px}
+}
+@media(max-width:380px){
+  .w{width:calc(100% - 26px)}
+  #services .rv + .g{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
+
+
+/* Extra UI polish: subtle progress indicator, refined cards and section rhythm */
+:root{scroll-padding-top:88px}
+html{scroll-behavior:smooth}
+#orink-scroll-progress{position:fixed;inset:0 auto auto 0;width:0;height:3px;background:linear-gradient(90deg,var(--acc),#ffb36b);z-index:9999;box-shadow:0 0 12px #ff5a1f55;transition:width .08s linear}
+section[id]{scroll-margin-top:92px}
+section .rv h2,.section-head h2{letter-spacing:-.035em;text-wrap:balance}
+.card,.service-card,.project-card,.price-card{position:relative;isolation:isolate;overflow:hidden}
+.card::after,.service-card::after,.project-card::after,.price-card::after{content:"";position:absolute;inset:0;pointer-events:none;border-radius:inherit;background:linear-gradient(125deg,transparent 15%,rgba(255,255,255,.055) 42%,transparent 68%);opacity:0;transform:translateX(-24%);transition:opacity .35s,transform .6s;z-index:-1}
+.card:hover::after,.service-card:hover::after,.project-card:hover::after,.price-card:hover::after{opacity:1;transform:translateX(0)}
+.card,.btn,.tabs button{transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease,background .25s ease}
+.card:hover{border-color:color-mix(in srgb,var(--acc) 42%,var(--line))}
+.btn:focus-visible,a:focus-visible,button:focus-visible{outline:3px solid color-mix(in srgb,var(--acc) 65%,transparent);outline-offset:3px}
+#orink-back-top{position:fixed;right:22px;bottom:22px;width:46px;height:46px;display:grid;place-items:center;border:1px solid color-mix(in srgb,var(--acc) 45%,var(--line));border-radius:15px;background:var(--card);color:var(--txt);font-size:1.2rem;font-weight:700;box-shadow:0 12px 32px #0002;z-index:900;opacity:0;visibility:hidden;transform:translateY(10px);transition:opacity .22s,visibility .22s,transform .22s,border-color .22s}
+#orink-back-top.visible{opacity:1;visibility:visible;transform:translateY(0)}
+#orink-back-top:hover{border-color:var(--acc);transform:translateY(-3px)}
+@media(max-width:600px){#orink-back-top{right:14px;bottom:14px;width:42px;height:42px;border-radius:13px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}#orink-scroll-progress,.card,.btn,#orink-back-top{transition:none}}
+
+
+
+/* Visual-only enhancement pass: no new features or content sections */
+:root{--orink-glow:color-mix(in srgb,var(--acc,#ff642d) 22%,transparent)}
+body{background-image:radial-gradient(ellipse at 12% 0%,var(--orink-glow),transparent 34%),radial-gradient(ellipse at 95% 28%,rgba(110,80,220,.055),transparent 30%)}
+::selection{background:var(--acc,#ff642d);color:#fff}
+nav a,.nav a{position:relative}
+nav a::after,.nav a::after{content:"";position:absolute;left:0;right:0;bottom:-5px;height:2px;border-radius:3px;background:var(--acc,#ff642d);transform:scaleX(0);transform-origin:left;transition:transform .22s ease}
+nav a:hover::after,.nav a:hover::after{transform:scaleX(1)}
+h1,h2,h3{ text-wrap:balance }
+.hero h1,.hero h1 *{letter-spacing:-.045em}
+.hero h1{filter:drop-shadow(0 8px 30px rgba(0,0,0,.10))}
+.btn{position:relative;isolation:isolate;overflow:hidden}
+.btn::before{content:"";position:absolute;inset:0;transform:translateX(-120%) skewX(-18deg);width:65%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.2),transparent);z-index:-1;transition:transform .6s ease}
+.btn:hover::before{transform:translateX(230%) skewX(-18deg)}
+.card,.service-card,.project-card,.price-card,.faq-item,.step-card{box-shadow:0 10px 32px rgba(0,0,0,.035);transition:transform .28s cubic-bezier(.2,.75,.25,1),border-color .28s,box-shadow .28s}
+.card:hover,.service-card:hover,.project-card:hover,.price-card:hover,.faq-item:hover,.step-card:hover{transform:translateY(-4px);box-shadow:0 18px 44px rgba(0,0,0,.09)}
+section{position:relative}
+section:not(.hero)::before{content:"";position:absolute;top:0;left:clamp(20px,5vw,72px);width:46px;height:2px;background:linear-gradient(90deg,var(--acc,#ff642d),transparent);opacity:.7}
+img,video{border-radius:inherit}
+input,textarea,select{transition:border-color .2s,box-shadow .2s,background .2s}
+input:focus,textarea:focus,select:focus{outline:none;border-color:var(--acc,#ff642d)!important;box-shadow:0 0 0 4px color-mix(in srgb,var(--acc,#ff642d) 13%,transparent)}
+footer{position:relative;overflow:hidden}
+footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--acc,#ff642d),rgba(120,90,230,.6),transparent);opacity:.8}
+@media(max-width:700px){.card:hover,.service-card:hover,.project-card:hover,.price-card:hover,.faq-item:hover,.step-card:hover{transform:translateY(-2px)}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+
+/* Scoped visual repair: original HTML structure/content remains untouched */
+#arc{
+  height:clamp(105px,16vw,180px);
+  margin-top:12px;
+  overflow:hidden;
+  position:relative;
+}
+#arc .ai{
+  border-radius:16px;
+  border:1px solid rgba(255,140,90,.22);
+  background:linear-gradient(145deg,#241711,#100d0b);
+  box-shadow:0 10px 24px rgba(0,0,0,.22),0 4px 22px rgba(255,90,31,.10);
+}
+.mq{
+  position:relative;
+  display:block;
+  overflow:hidden;
+  padding:0;
+  min-height:74px;
+  background:linear-gradient(100deg,#f4511e,#ff642d 48%,#f4511e);
+  color:#fff7f1;
+  border-block:1px solid rgba(255,255,255,.18);
+  font-size:clamp(1.08rem,1.9vw,1.5rem);
+  line-height:1.2;
+}
+.mq>div{
+  display:flex;
+  align-items:center;
+  width:max-content;
+  min-height:74px;
+  animation:mq 30s linear infinite;
+  will-change:transform;
+}
+.mq:hover>div{animation-play-state:paused}
+.mq span{
+  flex:none;
+  display:inline-flex;
+  align-items:center;
+  gap:16px;
+  margin:0;
+  padding:0 clamp(18px,2.8vw,38px);
+}
+.mq span::after{
+  content:"✦";
+  color:#ffd1b9;
+  font-size:.72em;
+}
+.ab{
+  background:linear-gradient(180deg,#ff642d 0%,#ff642d 100%);
+  padding:0 0 0;
+}
+.ab .tr{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:9px;
+  margin:0;
+  padding:24px 0 34px;
+}
+.ab .tr span{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:38px;
+  padding:8px 15px;
+  border:1px solid rgba(255,255,255,.35);
+  border-radius:999px;
+  background:rgba(255,255,255,.07);
+  color:#fff;
+  font-size:.84rem;
+  line-height:1;
+  transition:background .2s ease,border-color .2s ease,transform .2s ease;
+}
+.ab .tr span:hover{
+  transform:translateY(-2px);
+  background:rgba(255,255,255,.14);
+  border-color:rgba(255,255,255,.7);
+}
+.ab .dk{
+  margin-top:0;
+}
+@media(max-width:700px){
+  #arc{height:100px;margin-top:8px}
+  .mq,.mq>div{min-height:60px}
+  .mq span{padding-inline:16px;gap:12px}
+  .ab .tr{padding:20px 0 28px;gap:7px}
+  .ab .tr span{min-height:34px;padding:7px 11px;font-size:.78rem}
+}
+@media(prefers-reduced-motion:reduce){
+  .mq>div{animation:none}
+  .ab .tr span{transition:none}
+}
+
 </style></head><body>
+<div id="orink-scroll-progress" aria-hidden="true"></div>
+
 <header><div class="w"><nav><a class="logo" href="#/">ORINK<i>.</i></a>
 <div class="lk"><a href="#/" data-r="home">Home</a><a href="#/services" data-r="services">Services</a><a href="#/projects" data-r="projects">Projects</a><a href="#/about" data-r="about">About</a><a href="#/contact" data-r="contact">Contact</a></div>
 <div style="display:flex;gap:10px;align-items:center"><button class="ic" id="th" aria-label="Theme">◐</button><button class="ic" id="mb" aria-label="Menu">☰</button><a class="btn nb" href="#/contact">Start a Project</a></div></nav></div></header>
@@ -243,7 +552,10 @@ footer{padding-top:clamp(60px,8vw,100px)}
 <h1 data-w>We Build Digital Products That Grow Your Business</h1>
 <p class="mut">A full-service technology agency helping startups and businesses build high-converting web products and strong brands.</p>
 <a class="cta" href="#contact"><i>»</i><span>Get a Free Strategy</span></a></div>
-<div class="vc"><span class="vb">● Live Preview</span><span class="vcap">Build. Launch. Grow.</span><video data-f="a" autoplay muted loop playsinline></video></div></div>
+<div class="vc"><span class="vb">● Live Preview</span><span class="vcap">Build. Launch. Grow.</span><video data-f="a" autoplay muted loop playsinline></video>
+<span class="orink-note-arrow" aria-hidden="true">↗</span>
+</div>
+</div></div>
 <div class="arc" id="arc"></div></section>
 
 <div class="mq"><div><span>Built for Growth ✦</span><span>Designed to Convert ✦</span><span>Strategy First ✦</span><span>Orink Technology ✦</span><span>Built for Growth ✦</span><span>Designed to Convert ✦</span><span>Strategy First ✦</span><span>Orink Technology ✦</span></div></div>
@@ -280,9 +592,71 @@ footer{padding-top:clamp(60px,8vw,100px)}
 <div class="card sk" style="top:110px"><b>02</b><div><h3>Strategic Planning</h3><p class="mut">We map out every feature, milestone, and deliverable before a single line of code is written — so you’re never surprised.</p></div></div>
 <div class="card sk" style="top:130px"><b>03</b><div><h3>Seamless Execution</h3><p class="mut">Our engineers and designers work in sync, shipping quality code with pixel-perfect UI — on time, every time.</p></div></div></div></section>
 
-<section class="st"><div class="w"><div class="rv"><span class="tg" style="color:#fff">Numbers Don’t Lie</span><h2>They Reveal the True Power of a Company</h2></div>
-<!-- EDIT the data-t values with real numbers -->
-<div class="g rv"><div class="card"><strong data-t="25" data-s="+">0</strong><p>Completed Projects</p></div><div class="card"><strong data-t="100" data-s="%">0</strong><p>Client Satisfaction</p></div><div class="card"><strong data-t="20" data-s="+">0</strong><p>Happy Clients</p></div></div></div></section>
+
+<section class="fit-section" id="project-fit">
+  <div class="w">
+    <div class="rv">
+      <span class="tg">Interactive project planner</span>
+      <h2>Not sure where to start? Let’s find your best next step.</h2>
+      <p class="mut" style="max-width:720px">Answer three quick questions. Get a tailored starting point you can share with the Orink team — no account needed.</p>
+    </div>
+    <div class="fit-shell rv">
+      <div class="fit-panel">
+        <div class="fit-kicker"><span aria-hidden="true">✳</span> Project Fit Finder</div>
+        <div class="fit-progress" aria-label="Planner progress"><span class="active" id="fit-bar-1"></span><span id="fit-bar-2"></span><span id="fit-bar-3"></span></div>
+        <div class="fit-step" data-fit-step="0">
+          <h3>What are you trying to achieve?</h3>
+          <p class="mut">Choose the outcome that matters most right now.</p>
+          <div class="fit-options">
+            <button class="fit-option" type="button" data-fit-group="goal" data-fit-value="Get more leads" aria-pressed="false"><span class="fit-emoji">🎯</span><span><b>Get more leads</b><br><small class="mut">Turn visitors into enquiries</small></span></button>
+            <button class="fit-option" type="button" data-fit-group="goal" data-fit-value="Launch a new product" aria-pressed="false"><span class="fit-emoji">🚀</span><span><b>Launch a product</b><br><small class="mut">Bring an idea to life</small></span></button>
+            <button class="fit-option" type="button" data-fit-group="goal" data-fit-value="Automate a workflow" aria-pressed="false"><span class="fit-emoji">⚙️</span><span><b>Automate work</b><br><small class="mut">Reduce repetitive tasks</small></span></button>
+            <button class="fit-option" type="button" data-fit-group="goal" data-fit-value="Improve brand experience" aria-pressed="false"><span class="fit-emoji">✨</span><span><b>Improve my brand</b><br><small class="mut">Make the experience clearer</small></span></button>
+          </div>
+        </div>
+        <div class="fit-step" data-fit-step="1" hidden>
+          <h3>What kind of help do you need?</h3>
+          <p class="mut">Pick the closest match. We can refine the scope together.</p>
+          <div class="fit-options">
+            <button class="fit-option" type="button" data-fit-group="service" data-fit-value="Web Development" aria-pressed="false"><span class="fit-emoji">💻</span><span><b>Website / Web app</b><br><small class="mut">A stronger online experience</small></span></button>
+            <button class="fit-option" type="button" data-fit-group="service" data-fit-value="App Development" aria-pressed="false"><span class="fit-emoji">📱</span><span><b>Mobile app</b><br><small class="mut">iOS / Android experience</small></span></button>
+            <button class="fit-option" type="button" data-fit-group="service" data-fit-value="AI & Automation" aria-pressed="false"><span class="fit-emoji">🤖</span><span><b>AI / Automation</b><br><small class="mut">Smarter workflows</small></span></button>
+            <button class="fit-option" type="button" data-fit-group="service" data-fit-value="UI/UX Design" aria-pressed="false"><span class="fit-emoji">🎨</span><span><b>UI/UX & branding</b><br><small class="mut">Improve clarity and usability</small></span></button>
+          </div>
+        </div>
+        <div class="fit-step" data-fit-step="2" hidden>
+          <h3>When would you like to begin?</h3>
+          <p class="mut">This helps the team understand your priorities.</p>
+          <div class="fit-options">
+            <button class="fit-option" type="button" data-fit-group="timeline" data-fit-value="As soon as possible" aria-pressed="false"><span class="fit-emoji">⚡</span><span><b>As soon as possible</b><br><small class="mut">Ready to get moving</small></span></button>
+            <button class="fit-option" type="button" data-fit-group="timeline" data-fit-value="Within 2–4 weeks" aria-pressed="false"><span class="fit-emoji">📅</span><span><b>Within 2–4 weeks</b><br><small class="mut">Planning a near-term start</small></span></button>
+            <button class="fit-option" type="button" data-fit-group="timeline" data-fit-value="Just exploring options" aria-pressed="false"><span class="fit-emoji">🧭</span><span><b>Just exploring</b><br><small class="mut">Need advice before deciding</small></span></button>
+          </div>
+        </div>
+        <div class="fit-actions">
+          <button class="bt" id="fit-back" type="button" disabled>← Back</button>
+          <span class="fit-note" id="fit-step-label" aria-live="polite">Step 1 of 3</span>
+          <button class="btn" id="fit-next" type="button" disabled>Next step →</button>
+        </div>
+      </div>
+      <aside class="fit-result" aria-live="polite">
+        <div>
+          <span class="fit-kicker">Your starting point</span>
+          <h3 id="fit-result-title">A clearer brief starts here.</h3>
+          <p class="mut" id="fit-result-copy">Choose your goal, the kind of support you need, and your preferred timeline. We’ll turn those answers into a useful project brief.</p>
+          <ul class="fit-result-list" id="fit-result-list">
+            <li>Goal and priorities</li><li>Suggested service</li><li>Preferred timeline</li>
+          </ul>
+        </div>
+        <button class="btn" id="fit-send" type="button">Share this brief ↗</button>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="st" id="approach"><div class="w"><div class="rv"><span class="tg" style="color:#fff">The Orink Approach</span><h2>Clear thinking. Focused delivery.</h2><p style="max-width:680px;margin:0 auto 28px;color:#fff">A practical process built around understanding the problem, making thoughtful decisions, and delivering work with care.</p></div>
+<div class="g rv approach-grid"><div class="card"><strong data-t="1" data-s="">01</strong><h3>Understand</h3><p>Align on the business goal, audience, scope and priorities before work begins.</p></div><div class="card"><strong data-t="2" data-s="">02</strong><h3>Build</h3><p>Turn the agreed plan into a considered digital experience with clear communication.</p></div><div class="card"><strong data-t="3" data-s="">03</strong><h3>Improve</h3><p>Review the outcome, address feedback and identify the next useful improvement.</p></div></div></div></section>
+<section id="expectations"><div class="w"><div class="rv"><span class="tg">What you can expect</span><h2>A working relationship built on clarity.</h2><p class="mut">The goal is not just to ship a page or product. It is to make the process understandable and the result useful.</p></div><div class="g rv"><div class="card"><span class="em">↗</span><h3>Clear communication</h3><p class="mut">Know what is happening, what comes next and where decisions are needed.</p></div><div class="card"><span class="em">◇</span><h3>Purposeful design</h3><p class="mut">Each section and interaction should serve a real user need or business goal.</p></div><div class="card"><span class="em">✓</span><h3>Thoughtful delivery</h3><p class="mut">Responsive layouts, careful testing and attention to details that affect usability.</p></div></div></div></section>
 
 <section id="pricing"><div class="w"><div class="rv" style="text-align:center"><span class="tg">Pricing Plans</span><h2>Transparent Pricing for Every Stage</h2><p class="mut">No hidden fees. No surprises. Just clear value for every dollar you invest.</p></div>
 <div class="pr rv">
@@ -297,7 +671,22 @@ footer{padding-top:clamp(60px,8vw,100px)}
 <section id="contact" style="padding-top:0"><div class="w ct rv"><div><span class="tg">Get in Touch</span><h2>Let’s Build Something Amazing Together</h2>
 <p class="mut">Whether you have a project in mind or just want to explore possibilities — drop us a message and we’ll get back to you within 24 hours.</p>
 <p><b>Phone</b><br><a href="tel:+918280162443">+91-8280162443</a></p><p><b>Email</b><br><a href="mailto:orinktechnology@gmail.com">orinktechnology@gmail.com</a></p><p><b>Office</b><br>Bhubaneswar, Odisha, India</p></div>
-<form class="card" id="f"><input class="hp" tabindex="-1" autocomplete="off" name="website" aria-hidden="true"><input id="fn" placeholder="Your Name" required><input id="fe" type="email" placeholder="Email Address" required><input id="fp" placeholder="Phone Number"><select id="fs"><option value="">Select a service</option><option>Web Development</option><option>App Development</option><option>UI/UX Design</option><option>AI &amp; Automation</option><option>Digital Branding</option></select><textarea id="fm" rows="4" placeholder="Your Message"></textarea><button class="btn" type="submit">Send Message</button></form></div></section>
+<form class="card contact-form" id="f" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
+<div class="form-head"><span class="n">PROJECT ENQUIRY</span><h3>Tell us what you’re building</h3><p class="mut">Share a few details and our team can follow up with you.</p></div>
+<input type="hidden" name="form-name" value="contact">
+<p class="hp"><label>Leave this field empty <input name="bot-field" tabindex="-1" autocomplete="off"></label></p>
+<div class="form-grid"><div class="field"><label for="fn">Your name <span>*</span></label><input id="fn" name="name" placeholder="e.g. Rahul Sharma" autocomplete="name" required></div>
+<div class="field"><label for="fe">Email address <span>*</span></label><input id="fe" name="email" type="email" placeholder="you@company.com" autocomplete="email" required></div>
+<div class="field"><label for="fp">Phone number <small>(optional)</small></label><input id="fp" name="phone" type="tel" placeholder="+91 98765 43210" autocomplete="tel"></div>
+<div class="field"><label for="fs">What do you need?</label><select id="fs" name="service"><option value="">Select a service</option><option>Web Development</option><option>App Development</option><option>UI/UX Design</option><option>AI &amp; Automation</option><option>Digital Branding</option><option>Social Media Marketing</option><option>Something else</option></select></div>
+<div class="field"><label for="fbudget">Estimated budget <small>(optional)</small></label><select id="fbudget" name="budget"><option value="">Choose a range</option><option>Under $100</option><option>$100–$500</option><option>$500–$1,500</option><option>$1,500+</option><option>Not sure yet</option></select></div>
+<div class="field"><label for="ftimeline">Ideal timeline <small>(optional)</small></label><select id="ftimeline" name="timeline"><option value="">Choose a timeline</option><option>As soon as possible</option><option>Within 2–4 weeks</option><option>Within 1–3 months</option><option>Flexible / exploring</option></select></div></div>
+<div class="field"><label for="fm">Project details <span>*</span></label><textarea id="fm" name="message" rows="5" placeholder="Tell us about your idea, goals, timeline or budget…" required></textarea></div>
+<label class="consent"><input type="checkbox" name="contact-consent" value="yes" required><span>I agree that Orink Technology may contact me about this enquiry.</span></label>
+<button class="btn form-submit" type="submit"><span>Send enquiry</span><span aria-hidden="true">↗</span></button>
+<p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+<p class="form-note">Your details are used only to respond to your enquiry. Prefer WhatsApp? <a href="https://wa.me/919937947198" target="_blank" rel="noopener">Message us directly</a>.</p>
+</form></div></section>
 
 <section style="padding-top:0"><div class="w"><div class="rv"><span class="tg">Our Blog</span><h2>Latest News &amp; Articles</h2></div><div class="g rv">
 <div class="card"><span class="n">20 Apr · 3 min</span><h3>Designing User Experiences That Actually Convert</h3></div>
@@ -370,6 +759,111 @@ document.querySelectorAll('main:not([hidden]) video').forEach(function(v){v.play
 var t=an&&$(an);setTimeout(function(){t?t.scrollIntoView({behavior:'smooth'}):scrollTo(0,0)},40)}
 addEventListener('hashchange',route);route();
 $('th').onclick=function(){var d=document.documentElement,c=d.getAttribute('data-theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'),next=c==='dark'?'light':'dark';d.setAttribute('data-theme',next);$('th').setAttribute('aria-label','Switch to '+(next==='dark'?'light':'dark')+' theme');$('th').textContent=next==='dark'?'☼':'◐'};
-$('f').onsubmit=function(e){e.preventDefault();if(this.website.value)return;location.href='mailto:orinktechnology@gmail.com?subject='+encodeURIComponent('New enquiry from '+$('fn').value)+'&body='+encodeURIComponent('Name: '+$('fn').value+'\nEmail: '+$('fe').value+'\nPhone: '+$('fp').value+'\nService: '+$('fs').value+'\n\n'+$('fm').value)};
+// Native Netlify Forms submission: provide feedback without intercepting the POST.
+var contactForm=$('f');
+if(contactForm){contactForm.addEventListener('submit',function(){if(!contactForm.checkValidity())return;var submit=contactForm.querySelector('button[type="submit"]'),status=$('form-status');if(submit){submit.disabled=true;submit.querySelector('span').textContent='Sending enquiry…'}if(status)status.textContent='Sending securely… please keep this page open.';});}
 })();
-</script></body></html>
+
+// Interactive Project Fit Finder: a client-side project brief builder.
+(function(){
+  var root=document.getElementById('project-fit');
+  if(!root)return;
+  var answers={goal:'',service:'',timeline:''},step=0;
+  var steps=[].slice.call(root.querySelectorAll('[data-fit-step]'));
+  var back=document.getElementById('fit-back'),next=document.getElementById('fit-next');
+  var label=document.getElementById('fit-step-label'),title=document.getElementById('fit-result-title');
+  var copy=document.getElementById('fit-result-copy'),list=document.getElementById('fit-result-list');
+  function refresh(){
+    steps.forEach(function(el,i){el.hidden=i!==step;});
+    [1,2,3].forEach(function(n){var bar=document.getElementById('fit-bar-'+n);if(bar)bar.classList.toggle('active',n<=step+1);});
+    back.disabled=step===0;
+    var key=['goal','service','timeline'][step];
+    next.disabled=!answers[key];
+    next.textContent=step===2?'Build my brief →':'Next step →';
+    label.textContent='Step '+(step+1)+' of 3';
+    var count=[answers.goal,answers.service,answers.timeline].filter(Boolean).length;
+    if(!count){
+      title.textContent='A clearer brief starts here.';
+      copy.textContent='Choose your goal, the kind of support you need, and your preferred timeline. We’ll turn those answers into a useful project brief.';
+      list.innerHTML='<li>Goal and priorities</li><li>Suggested service</li><li>Preferred timeline</li>';
+      return;
+    }
+    title.textContent=count===3?'Your project brief is ready.':'Your plan is taking shape.';
+    copy.textContent=count===3?'Here is a concise starting brief based on your choices. Share it with the Orink team to start a more focused conversation.':'Keep going to build a short brief that helps the team understand what matters to you.';
+    list.innerHTML=[
+      '<li><b>Goal:</b> '+(answers.goal||'Choose your goal')+'</li>',
+      '<li><b>Service:</b> '+(answers.service||'Choose a service')+'</li>',
+      '<li><b>Timeline:</b> '+(answers.timeline||'Choose a timeline')+'</li>'
+    ].join('');
+  }
+  root.addEventListener('click',function(e){
+    var option=e.target.closest('[data-fit-group]');
+    if(!option)return;
+    var group=option.getAttribute('data-fit-group');
+    answers[group]=option.getAttribute('data-fit-value');
+    root.querySelectorAll('[data-fit-group="'+group+'"]').forEach(function(b){b.setAttribute('aria-pressed',String(b===option));});
+    refresh();
+  });
+  back.addEventListener('click',function(){if(step>0){step--;refresh();}});
+  next.addEventListener('click',function(){
+    var key=['goal','service','timeline'][step];if(!answers[key])return;
+    if(step<2){step++;refresh();return;}
+    title.textContent='Your project brief is ready.';
+    copy.textContent='Your choices are ready to share. The details will be added to the contact form so the team has useful context.';
+    var service=document.getElementById('fs');
+    if(service){var option=[].slice.call(service.options).find(function(o){return o.text===answers.service||o.value===answers.service;});if(option)service.value=option.value;}
+    var details=document.getElementById('fm');
+    if(details){
+      var brief='Project Fit Finder brief\nGoal: '+answers.goal+'\nService: '+answers.service+'\nPreferred timeline: '+answers.timeline+'\n\nAdditional project details: ';
+      details.value=brief+(details.value||'');
+      details.focus();
+    }
+    var contact=document.getElementById('contact');
+    if(contact)contact.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});
+  });
+  document.getElementById('fit-send').addEventListener('click',function(){
+    if(!answers.goal||!answers.service||!answers.timeline){
+      var missing=['goal','service','timeline'].find(function(k){return !answers[k];});
+      step=missing==='goal'?0:missing==='service'?1:2;refresh();return;
+    }
+    step=2;refresh();
+    var details=document.getElementById('fm');
+    if(details){
+      var brief='Project Fit Finder brief\nGoal: '+answers.goal+'\nService: '+answers.service+'\nPreferred timeline: '+answers.timeline+'\n\nAdditional project details: ';
+      details.value=brief+(details.value||'');
+    }
+    var contact=document.getElementById('contact');
+    if(contact)contact.scrollIntoView({behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'start'});
+  });
+  refresh();
+})();
+
+</script>
+<button id="orink-back-top" type="button" aria-label="Back to top" title="Back to top">↑</button>
+
+<script>
+(() => {
+  const progress = document.getElementById('orink-scroll-progress');
+  const backTop = document.getElementById('orink-back-top');
+  if (!progress && !backTop) return;
+  let ticking = false;
+  const updateScrollUI = () => {
+    const maxScroll = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+    const percent = Math.min(100, Math.max(0, (window.scrollY / maxScroll) * 100));
+    if (progress) progress.style.width = percent + '%';
+    if (backTop) backTop.classList.toggle('visible', window.scrollY > 500);
+    ticking = false;
+  };
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      window.requestAnimationFrame(updateScrollUI);
+      ticking = true;
+    }
+  }, { passive: true });
+  window.addEventListener('resize', updateScrollUI, { passive: true });
+  if (backTop) backTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  updateScrollUI();
+})();
+</script>
+
+</body></html>
