@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Orink Technology — Build. Launch. Grow.</title>
@@ -540,41 +540,84 @@ footer::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;back
 }
 
 
-/* Mobile fix for About section: prevent oversized text and CTA overflow */
-#about .dk{padding:clamp(42px,7vw,80px) 0}
-#about .dk>.w{width:min(100% - 48px,1000px);margin-inline:auto}
-#about .dk .ps{width:100%;gap:clamp(18px,3vw,30px)}
-#about .dk .ps p{min-width:0;overflow-wrap:break-word}
-#about .dk h2{
-  width:100%;
-  max-width:1000px;
-  font-size:clamp(2rem,5.2vw,5rem);
-  line-height:1.06;
-  letter-spacing:-.035em;
-  overflow-wrap:normal;
-  word-break:normal;
-  margin:0 auto clamp(20px,3vw,30px);
+/* Mobile repair for the About Us feature card */
+@media (max-width: 600px) {
+  .ab .dk {
+    margin-inline: 0;
+    padding: 42px 0 48px;
+    border-radius: 26px 26px 0 0;
+    text-align: center;
+    overflow: hidden;
+  }
+  .ab .dk .w {
+    width: calc(100% - 36px);
+    max-width: 100%;
+  }
+  .ab .dk .ps {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin: 0 auto 28px;
+    text-align: left;
+    max-width: 520px;
+    font-size: clamp(.96rem, 4vw, 1.08rem);
+    line-height: 1.65;
+  }
+  .ab .dk .ps p,
+  .ab .dk .ps p:last-child {
+    max-width: none;
+    margin: 0;
+    text-align: left;
+    overflow-wrap: anywhere;
+  }
+  .ab .dk > .w > .tg {
+    margin-bottom: 12px;
+  }
+  .ab .dk h2 {
+    max-width: 100%;
+    margin: 0 auto 22px;
+    font-size: clamp(2rem, 8.5vw, 3rem);
+    line-height: 1.08;
+    letter-spacing: -.04em;
+    text-wrap: balance;
+    overflow-wrap: break-word;
+  }
+  .ab .dk .mut {
+    font-size: .92rem;
+    line-height: 1.5;
+    margin: 0 auto 22px !important;
+    overflow-wrap: anywhere;
+  }
+  .ab .dk .cta.l {
+    display: inline-flex;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 4px;
+  }
+  .ab .dk .cta.l i {
+    width: 38px;
+    height: 38px;
+    flex: 0 0 38px;
+    font-size: 1rem;
+  }
+  .ab .dk .cta.l span {
+    min-height: 42px;
+    height: auto;
+    padding: 10px 14px;
+    font-size: clamp(1rem, 4.6vw, 1.25rem);
+    line-height: 1.15;
+    white-space: normal;
+    overflow-wrap: anywhere;
+  }
 }
-#about .dk>.w>p.mut{font-size:clamp(.95rem,2.2vw,1.35rem);line-height:1.5}
-#about .dk .cta{max-width:100%;display:inline-flex;align-items:center;justify-content:center}
-#about .dk .cta span{min-width:0;white-space:normal;padding-inline:clamp(14px,3vw,26px)}
-@media(max-width:700px){
-  #about .dk{padding:44px 0 52px;border-radius:26px 26px 0 0}
-  #about .dk>.w{width:calc(100% - 36px)}
-  #about .dk .ps{flex-direction:column;gap:16px;margin:0 auto 26px;text-align:left}
-  #about .dk .ps p,#about .dk .ps p:last-child{max-width:100%;text-align:left;font-size:clamp(.98rem,4vw,1.12rem);line-height:1.65}
-  #about .dk h2{font-size:clamp(2rem,8.2vw,3.4rem);line-height:1.08;letter-spacing:-.03em;margin-bottom:24px}
-  #about .dk>.w>p.mut{margin-bottom:22px!important;font-size:clamp(.9rem,3.8vw,1.08rem)}
-  #about .dk .cta{gap:5px;padding:4px;width:auto;max-width:100%}
-  #about .dk .cta i{width:38px;height:38px;flex:0 0 38px}
-  #about .dk .cta span{min-height:38px;font-size:clamp(1rem,4.5vw,1.25rem);padding:8px 13px}
+@media (max-width: 360px) {
+  .ab .dk .w { width: calc(100% - 28px); }
+  .ab .dk { padding-top: 34px; }
+  .ab .dk h2 { font-size: clamp(1.8rem, 8vw, 2.25rem); }
+  .ab .dk .cta.l span { padding-inline: 10px; }
 }
-@media(max-width:360px){
-  #about .dk>.w{width:calc(100% - 28px)}
-  #about .dk h2{font-size:1.9rem}
-  #about .dk .cta span{font-size:.98rem;padding-inline:10px}
-}
-
 </style></head><body>
 <div id="orink-scroll-progress" aria-hidden="true"></div>
 
